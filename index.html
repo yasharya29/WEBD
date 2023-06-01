@@ -7,48 +7,62 @@
         .buttonclas {
 
             text-align: center;
-            color: red;
-            width: 760px;
+            align-items: center;
+            justify-content: center;
             height: 50px;
+            margin-top: 1%;
+        }
+
+        h3 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        .centered {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            padding: 1%;
 
         }
     </style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jquery learning basics</title>
+
 </head>
 
 <body>
-    <p id="paragraph" align="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam error optio
-        laborum, corrupti facilis, quod at soluta natus omnis alias enim dolore explicabo adipisci nemo ab vero pariatur
-        sunt in? Eius suscipit, dolores repellendus dicta corporis, placeat beatae debitis mollitia cupiditate,
-        architecto adipisci porro ullam obcaecati reiciendis ut et ipsam velit! Quis minus dicta adipisci nostrum.
-        Perferendis harum possimus tenetur iste corrupti doloremque saepe quo animi recusandae? Magnam, dolores quo.
-        Eius, sapiente incidunt! Perferendis fugiat, quo enim, nesciunt animi magnam et consequuntur totam veniam
-        deleniti, non atque voluptatum? Quaerat, quo quos. Enim eius totam accusantium mollitia excepturi natus tempore
-        saepe eligendi, obcaecati molestiae corrupti provident incidunt qui reprehenderit cupiditate laboriosam earum
-        dolore! Mollitia eaque dignissimos aliquid id reiciendis aliquam, veritatis debitis voluptatum sint sit est
-        officia enim consequuntur aut atque sapiente excepturi recusandae facilis eligendi? Quae esse, veritatis
-        voluptas dignissimos modi ducimus dolorum quia laborum eligendi deleniti officia quos facere consequatur ab
-        expedita sit commodi aliquam? Quo alias facilis perspiciatis minima quia harum quis qui, tempore et consequuntur
-        repudiandae unde sit nostrum? Ea ratione iusto ullam, ut sint minus reprehenderit voluptatem quis? Tempora saepe
-        natus voluptates ut molestiae quisquam, ipsum at, omnis dolores autem laboriosam quo possimus cupiditate,
-        reiciendis esse! </p>
-    <div class="buttonclas">
+    <h3>fp</h3>
+    <hr color="black">
+    <form class="centered">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Yash"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Arya">
+    </form>
+    <br>
+    <br>
 
-        <button id="but">Click me to toggle above text</button>
-    </div>
-    <div class="buttonclas">
+    <hr color="black">
 
-        <button id="but1">Click me to slidetoggle above text</button>
-    </div>
-    <div class="buttonclas">
+    <p id="paragraph"><b>Lorem</b><i> ipsum</i>dolor sit, amet consectetur adipisicing elit. Unde repellendus vel sed
+        aut debitis aperiam quas, cumque sapiente incidunt, numquam quibusdam assumenda animi voluptatem est suscipit
+        quod consectetur? Iusto nobis corrupti iure! Voluptatibus inventore dolores laboriosam voluptatem, est,
+        obcaecati quis commodi non tempora ad impedit fugiat debitis illum exercitationem laudantium.</p>
 
-        <button id="but2">Animation 1</button>
-    </div>
-    <div class="buttonclas">
 
-        <button id="but3">Animation rollback</button>
+    <div class="buttonclas">
+        <button id="but">Hide/show text </button>
+        <button id="but1">Hide/show text by sliding </button>
+        <button id="but2"> Animation with height width opacity etc</button>
+        <button id="but3">Fade toggle</button>
+        <button id="but4">Change font using Chaining jQueries</button>
+        <button id="but5">DOM manipulation TEXT</button>
+        <button id="but6">DOM manipulation HTML</button>
+        <button id="but7">DOM manipulation VALUE</button>
+
     </div>
 
 
