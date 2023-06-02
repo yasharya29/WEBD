@@ -309,5 +309,7 @@ a:link {
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
-    border: 1px #ffffff;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: #ff6a00;
 }
