@@ -346,7 +346,7 @@ body {
     font-family: 'Roboto Slab', serif;
     text-align: center;
     margin-top: 50px;
-    font-size: 60px;
+    font-size: 350%;
 }
 
 .cardhead {
@@ -356,7 +356,7 @@ body {
 }
 
 .cardtext {
-
+    padding-top: 0px;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -416,7 +416,7 @@ body {
     font-family: 'Roboto Slab', serif;
     text-align: center;
     margin-top: 50px;
-    font-size: 60px;
+    font-size: 350%;
 }
 
 #card31 {
@@ -428,16 +428,26 @@ body {
 }
 
 #hthree {
-    position: relative;
-    left: 2vh;
+    display: flex;
+    justify-content: center;
     line-height: 5vh;
     text-align: left;
     font-family: 'Roboto Slab', serif;
 }
 
+#but4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#but3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 #hfour {
-    position: relative;
-    left: 2vh;
+    display: flex;
+    justify-content: center;
     line-height: 5vh;
     text-align: left;
     font-family: 'Roboto Slab', serif;
@@ -495,7 +505,7 @@ body {
     font-family: 'Roboto Slab', serif;
     text-align: center;
     margin-top: 50px;
-    font-size: 60px;
+    font-size: 350%;
 }
 
 
@@ -543,16 +553,17 @@ body {
     font-family: 'Poppins', sans-serif;
     padding: 15vh;
     padding-top: 5vh;
+
 }
 
 #authorhead {
     font-weight: 400;
-    font-size: 7vh;
+    font-size: 350%;
     font-family: 'Roboto Slab', serif;
     padding-top: 15vh;
-    padding-bottom: 0vh;
-    position: relative;
-    right: 12vh;
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -601,7 +612,7 @@ footer {
     gap: 20px;
     margin-top: 0px;
     padding-top: 60px;
-    padding-left: 131px;
+    padding-left: 5%;
 }
 
 .form {
@@ -646,7 +657,7 @@ footer {
 .last {
     font-family: 'Roboto Slab', serif;
 
-    font-size: 40px;
+    font-size: 350%;
     position: relative;
 
     height: 88px;
@@ -701,119 +712,6 @@ footer {
 
 }
 
-/*************************************@media (min-width: 1921px){}*************************************************************************************************************************/
-
-
-/* 
-@media (max-width: 1921px) {
-    #h11 {
-        font-size: 400%;
-    }
-
-    #h12 {
-        font-size: 400%;
-    }
-
-    #h51 {
-        font-size: 70%;
-    }
-
-    .navbar {
-        font-size: 200%;
-    }
-
-    .block1 {
-        font-size: 170%;
-    }
-
-    #but1 {
-        margin-bottom: 10vh;
-    }
-
-    .block2-text {
-        margin-top: 9vh;
-    }
-
-    .block2 {
-        font-size: 160%;
-        margin: 0;
-    }
-
-    .card2 {
-        margin-bottom: 1vh;
-    }
-
-    .card3 {
-        margin-bottom: 6vh;
-        padding: 2vh;
-    }
-
-
-    #hthree {
-        margin-left: 2vh;
-        padding: 2vh;
-    }
-
-    #hfour {
-        margin-left: 2vh;
-        padding: 2vh;
-    }
-
-    .block3 {
-        font-size: 170%;
-    }
-
-    .block4 {
-        font-size: 170%;
-        margin: 0;
-    }
-
-
-
-    .card4 {
-        margin-bottom: 3vh;
-    }
-
-    #authortext {
-        font-size: 160%;
-        padding: 7vh;
-        padding-right: 0vh;
-    }
-
-    #authorhead {
-        right: 17vh;
-        margin-top: 0vh;
-        margin-bottom: -7vh;
-        padding-top: 9vh;
-    }
-
-    .contact {
-        font-size: 150%;
-        font-family: 'Poppins', sans-serif;
-        padding-top: 2.5vh;
-    }
-
-    .block6 {
-
-        padding: 3%;
-    }
-
-    .form {
-        font-size: 150%;
-    }
-
-    .contactform {
-        font-size: 150%;
-        height: 20%;
-    }
-
-    .contactform1 {
-        font-size: 150%;
-        width: 81.5%;
-        height: 20%;
-    }
-} */
-
 
 @media only screen and (min-width:1600px) and (max-width:1899px) {
     #h11 {
@@ -859,7 +757,7 @@ footer {
 
 
     #hthree {
-        margin-left: 2vh;
+
         padding: 2vh;
     }
 
@@ -940,7 +838,7 @@ footer {
 
 
     #hthree {
-        margin-left: 2vh;
+
         padding: 2vh;
     }
 
@@ -1014,7 +912,7 @@ footer {
 
 
     #hthree {
-        margin-left: 2vh;
+
         padding: 2vh;
     }
 
@@ -1088,7 +986,8 @@ footer {
     #hthree {
         padding-top: 6vh;
         position: relative;
-        left: 6vh;
+
+
     }
 
     #hfour {
@@ -1162,8 +1061,8 @@ footer {
 
     #hthree {
         padding-top: 3vh;
-        left: 6vh
     }
+
 
     #hfour {
         padding-top: 3vh;
@@ -1324,8 +1223,5 @@ footer {
         padding-top: 3vh;
         left: 0px;
     }
-
-
-
 
 }
