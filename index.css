@@ -349,6 +349,11 @@ body {
     font-size: 60px;
 }
 
+.cardhead {
+
+
+    font-family: 'Roboto Slab', serif;
+}
 
 .cardtext {
     padding: 20px;
@@ -374,6 +379,11 @@ body {
         grid-template-columns: auto;
         margin: 20px 20px 40px 20px;
     }
+
+    .card2 {
+        padding: 10px 0px;
+    }
+
 }
 
 
@@ -388,7 +398,7 @@ body {
 
 .card3 {
     background-color: rgb(224, 224, 224);
-    padding: 49px 55px 22px 55px;
+    padding: 49px 35px 22px 35px;
     text-align: center;
     border-radius: 70px;
     /* width: 452px; */
@@ -408,22 +418,42 @@ body {
 }
 
 #card31 {
-    margin-left: 11vh;
+    margin-left: 5vh;
 }
 
 #card32 {
-    margin-right: 11vh;
+    margin-right: 5vh;
 }
 
 #hthree {
+    line-height: 5vh;
     text-align: left;
+    font-family: 'Roboto Slab', serif;
 }
 
 #hfour {
+    line-height: 5vh;
     text-align: left;
+    font-family: 'Roboto Slab', serif;
 }
 
 
+@media (max-width: 900px) {
+    .card3 {
+        padding: 3vh;
+        border-radius: 50px;
+        text-align: justify;
+        line-height: 110%;
+    }
+
+    .cardtext {
+        padding: 5px;
+    }
+
+    .block3 {
+        grid-gap: 2vh;
+    }
+}
 
 /******************************Block4*************************************************************************************************************************************/
 .blockk4 {
