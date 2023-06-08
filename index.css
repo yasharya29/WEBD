@@ -638,7 +638,7 @@ footer {
     color: #fff;
     padding: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 55vw auto;
     gap: 20px;
     margin-top: 0px;
     padding-top: 50px;
@@ -681,7 +681,7 @@ footer {
     margin: 0px 0px 10px 0px;
     padding: 0px 0px 0px 20px;
     height: 30px;
-    width: 82%;
+    width: 81%;
     display: inline-block;
 }
 
