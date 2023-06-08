@@ -25,7 +25,7 @@ header {
     background-color: rgb(0, 0, 0);
     color: #fff;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     grid-template-columns: 10px 1fr;
 }
 
