@@ -74,7 +74,7 @@ a::before {
     transition: transform .3s ease-in-out;
 }
 
-a:hover::before {
+.navbar-item:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -524,7 +524,7 @@ footer {
 }
 
 .btn-hover.color-4 {
-    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    background-image: linear-gradient(to right, #fc6076, #EB9C00, #EB9C00, #e75516);
     box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
 }
 
@@ -560,57 +560,94 @@ footer {
 
 /*************************************************Cards************************************************************************************************************************/
 
-.img1 {
-    margin-bottom: 10px;
-
-}
-
 .cards {
     background-color: #000000;
-    padding: 3%;
     display: grid;
+    justify-content: center;
     grid-template-columns: auto auto auto;
+    grid-gap: 10px;
 
+}
+
+.image {
+    border-radius: "10px"
 
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    margin: 10px;
-    border: 1px solid bisque;
-    border-radius: 50px;
-    background-color: rgb(48, 48, 48);
-    height: 90%;
+.text {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5px;
+    padding-left: 10px;
 }
 
-.card:hover {
-    background-color: rgb(59, 59, 59);
-    /*  margin: 8px; */
+.cardtitle {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
 }
 
-.but {
-
-    margin: 5%;
-    padding: 2%;
-    margin-bottom: 30px;
+.readmore {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+    color: #EB9C00;
+    padding-left: 0px;
+    margin-left: 0px;
 
 }
+
+.readme:hover {
+    font-weight: bolder;
+}
+
+.cardcont {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 266px auto;
+}
+
+.cardcont:hover {
+    background-color: #dfd5be;
+}
+
+
 
 /**************************media-queries*********************************************************************************************************************************************/
-@media only screen and (min-width:1600px) and (max-width:1899px) {}
+@media only screen and (min-width:1600px) and (max-width:1899px) {
+    .card {
+        font-size: 16px;
+    }
+}
 
-@media only screen and (min-width:1350px) and (max-width:1599px) {}
+@media only screen and (min-width:1350px) and (max-width:1599px) {
+    .card {
+        font-size: 16px;
+    }
+}
 
-@media only screen and (min-width:1280px) and (max-width:1349px) {}
+@media only screen and (min-width:1280px) and (max-width:1349px) {
+    .card {
+        font-size: 16px;
+    }
+}
 
-@media only screen and (min-width:1121px) and (max-width:1279px) {}
+@media only screen and (min-width:1121px) and (max-width:1279px) {
+    .card {
+        font-size: 16px;
+    }
+}
 
 @media only screen and (min-width:992px) and (max-width:1120px) {
     .cards {
         grid-template-columns: auto auto;
+    }
+
+    .card {
+        font-size: 16px;
     }
 }
 
@@ -618,16 +655,67 @@ footer {
     .cards {
         grid-template-columns: auto auto;
     }
+
+    .card {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767px) {
     .cards {
         grid-template-columns: auto auto;
     }
+
+    .card {
+        font-size: 16px;
+    }
 }
 
 @media (max-width:650px) {
+    .card {
+        font-size: 14px;
+    }
+
     .cards {
         grid-template-columns: auto;
     }
 }
+
+@media (max-width: 950px) {
+
+
+    .form {
+        padding-left: 30px;
+        width: 80%;
+    }
+
+    .contactform {
+        width: 80%;
+    }
+
+    .contactform1 {
+        width: 80%;
+    }
+
+    .block6 {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+        padding-top: 0;
+    }
+
+    /* 
+    .contact {
+        padding-top: 0px;
+        padding-left: 1vh;
+        padding-bottom: 11%;
+    } */
+
+    .last {
+        padding-top: 30px;
+        margin-bottom: 20px;
+        left: 0px;
+    }
+
+}
+
+/*******************************************************************************************************************************************************************************************************/

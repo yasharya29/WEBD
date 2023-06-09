@@ -99,7 +99,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #000000;
-    background: linear-gradient(to left, #f46b45, #eea849);
+    background: linear-gradient(to left, #f46b45, #EB9C00);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #850606;
     height: 50px;
@@ -289,7 +289,7 @@ body {
 }
 
 .btn-hover.color-4 {
-    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    background-image: linear-gradient(to right, #fc6076, #EB9C00, #EB9C00, #e75516);
     box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
 }
 
@@ -328,7 +328,7 @@ body {
 .gradient {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
-    background: -webkit-linear-gradient(#ffffff, #ff5100);
+    background: -webkit-linear-gradient(#ffffff, #EB9C00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -1013,7 +1013,8 @@ footer {
     }
 
     #authortext {
-        font-size: 105%;
+        /* 
+        */
         padding: 50px;
         padding-right: 0px;
     }
@@ -1095,7 +1096,7 @@ footer {
     }
 
     #authortext {
-        font-size: 105%;
+        /*  font-size: 105%; */
         padding: 50px;
         padding-right: 0px;
     }
@@ -1167,7 +1168,8 @@ footer {
     }
 
     #authortext {
-        font-size: 105%;
+        /*  font-size: 105% */
+        ;
         padding: 50px;
         padding-right: 0px;
     }
@@ -1289,7 +1291,7 @@ footer {
 
     .cardtext {
         padding-top: 0;
-        font-size: 110%;
+
     }
 
     .card3 {
@@ -1464,6 +1466,87 @@ footer {
         padding-top: 30px;
         margin-bottom: 20px;
         left: 0px;
+    }
+
+}
+
+@media only screen and (min-width:1600px) and (max-width:1899px) {
+    #authortext {
+        font-size: 18px;
+    }
+
+    .cardtext {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:1350px) and (max-width:1599px) {
+    #authortext {
+        font-size: 18px;
+    }
+
+    .cardtext {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:1280px) and (max-width:1349px) {
+    #authortext {
+        font-size: 18px;
+    }
+
+    .cardtext {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:1121px) and (max-width:1279px) {
+    #authortext {
+        font-size: 16px;
+    }
+
+    .cardtext {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1120px) {
+    #authortext {
+        font-size: 16px;
+    }
+
+    .cardtext {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    #authortext {
+        font-size: 16px;
+    }
+
+    .cardtext {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    #authortext {
+        font-size: 14px;
+    }
+
+    .cardtext {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:479px) {
+    #authortext {
+        font-size: 14px;
+    }
+
+    .cardtext {
+        font-size: 14px;
     }
 
 }
