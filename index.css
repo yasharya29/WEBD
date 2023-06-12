@@ -13,11 +13,9 @@
 }
 
 header {
-    position: sticky;
+
     display: grid;
     grid-template-columns: 40% 60%;
-    /*  justify-content: space-between;
-    align-items: center; */
     background-color: #ffffff;
     padding: 10px;
     margin: 5px;
@@ -50,9 +48,6 @@ nav ul li a {
 
 nav ul :hover {
     transform: scale(1.2);
-
-
-
 }
 
 nav ul a {
@@ -183,6 +178,11 @@ nav ul a:hover::before {
     grid-template-columns: 50% 50%;
     justify-content: center;
     align-items: center;
+    margin: 30px;
+    margin-left: 90px;
+    height: fit-content;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .white {
@@ -192,60 +192,223 @@ nav ul a:hover::before {
 }
 
 #honeleft {
-    margin: 30px;
+    /* margin: 30px; */
     margin-right: 50px;
     font-family: 'Roboto Slab', serif;
     font-size: 60px;
 }
 
 #textleft {
-    margin: 30px;
+    /* margin: 30px; */
     margin-right: 100px;
 }
 
-.right {
-    height: 100%;
+.button {
+    margin: 10px;
+    margin-left: 0px;
+    border: 2px solid #ff9100;
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 30px;
+    padding: 6px;
+}
+
+.button:hover {
+    background-color: #FF9100;
+    transform: scale(1.1);
+    transition: transform 0.05s ease;
+}
+
+.image {
+    border: 1px solid wheat;
     width: 100%;
     height: auto;
 }
 
-.img-fluid {
-    margin: 20px;
-    max-width: 90%;
-    height: auto;
+.link a {
+    text-decoration: none;
+}
+
+.link :hover {
+    transform: scale(1.2);
+}
+
+.link a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: #000;
+}
+
+.link a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.link a:hover::before {
+    transform: scaleX(1);
 }
 
 
 
+/*****************************************two*********************************************************************************************************************/
+.two {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin: 30px;
+    margin-left: 76px;
+    height: fit-content;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 
-/**********************************************************************************************************************************************************************/
+h2 {
+    font-size: 40px;
+}
+
+.inner {
+    margin: 20px;
+}
+
+q {
+    font-weight: bold;
+}
+
+.link {
+    display: contents;
+}
+
+
+.text {
+    font-size: 19px;
+}
+
+/************************************three******************************************************************************************************/
+
+/* 
+.black {
+    background-color: #414141
+} */
+
+.scroll-container {
+    background-color: rgb(142, 142, 142);
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.scroll-content {
+    display: inline-block;
+    overflow-y: hidden;
+}
+
+
+
+.innerr {
+    color: #ffffff;
+    margin: 76px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.cardtext {
+    padding: 30px;
+    height: 499px;
+}
+
+#services {
+    background-color: rgb(142, 142, 142);
+    margin: 0px;
+}
+
+.card {
+    object-fit: contain;
+    border-radius: 40px;
+    margin: 10px;
+    background-color: rgb(142, 142, 142);
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.cardimage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /*  bottom: 200px; */
+}
+
+.slick-prev {
+    background-color: rgb(142, 142, 142);
+    border-radius: 70px;
+    height: 40px;
+    width: 70px;
+    top: 100%;
+    position: absolute;
+    left: 47%;
+    z-index: 9;
+    border: 1px solid black;
+}
+
+.slick-next {
+    background-color: rgb(142, 142, 142);
+    border-radius: 70px;
+    height: 40px;
+    width: 70px;
+    position: absolute;
+    left: 53%;
+    border: 1px solid black;
+
+}
+
+
+
+/*******************************************************************************************************************************/
+@media only screen and (min-width:1921px) {
+
+    #honeleft {
+
+        font-size: 3.33vw;
+    }
+}
+
 @media only screen and (min-width:1600px) and (max-width:1899px) {}
 
-@media only screen and (min-width:1350px) and (max-width:1599px) {}
+@media only screen and (min-width:1350px) and (max-width:1599px) {
 
-@media only screen and (min-width:1280px) and (max-width:1349px) {}
+    .text {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width:1280px) and (max-width:1349px) {
+    .text {
+        font-size: 16px;
+    }
+}
 
 @media only screen and (min-width:1121px) and (max-width:1279px) {
-    .one {
 
-        grid-template-columns: auto;
+    .text {
+        font-size: 16px;
     }
 
     #honeleft {
 
         font-size: 50px;
     }
-}
 
-@media only screen and (min-width:992px) and (max-width:1120px) {
-
-    .one {
-
-        grid-template-columns: auto;
-    }
-
-    #honeleft {
-
+    h2 {
         font-size: 40px;
     }
 
@@ -255,40 +418,156 @@ nav ul a:hover::before {
     }
 }
 
-@media only screen and (min-width:768px) and (max-width:991px) {
-    .one {
+@media only screen and (min-width:992px) and (max-width:1120px) {
 
-        grid-template-columns: auto;
+    .text {
+        font-size: 16px;
     }
 
+    #honeleft {
+
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
 
     header {
+
         grid-template-columns: 20% 80%;
     }
 }
 
-@media (max-width: 767px) {
-    .one {
-
-        grid-template-columns: auto;
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .text {
+        font-size: 16px;
     }
 
+    .one {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin: 30px;
+    }
+
+    .two {
+        margin: 12px;
+    }
+
+    #honeleft {
+
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
 
     header {
         grid-template-columns: 10% 90%;
-    }
-}
-
-@media (max-width:718px) {
-    .one {
-
-        grid-template-columns: auto;
     }
 
 
     #menu {
         height: 100vh;
 
+        margin: 20px
+    }
+
+    #nav-icon3 {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .text {
+        font-size: 15px;
+    }
+
+    #honeleft {
+
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .one {
+
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin: 30px;
+    }
+
+    .two {
+        grid-template-columns: auto;
+        margin: 12px;
+    }
+
+    .order1 {
+        order: 1;
+    }
+
+    .order2 {
+        order: 2;
+    }
+
+    #three {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 10% 90%;
+    }
+
+
+    #menu {
+        height: 100vh;
+
+        margin: 20px
+    }
+
+    #nav-icon3 {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+@media (max-width:718px) {
+    .one {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin: 30px;
+    }
+
+    .two {
+        grid-template-columns: auto;
+        margin: 12px;
+    }
+
+    #three {
+        display: none;
+    }
+
+    #honeleft {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #menu {
+        height: 100vh;
         margin: 20px
     }
 
