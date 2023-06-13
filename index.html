@@ -13,7 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -55,7 +63,8 @@
     <div class="container one">
         <div class="left">
             <h1 ID="honeleft">IS YOUR HOME IN NEED OF UPGRADES OR REPAIRS?</h1>
-            <p id="textleft text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, molestias at quos
+            <p id="textleft" class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, molestias at
+                quos
                 voluptatum eligendi
                 consequatur expedita ratione maxime fugiat minima!</p>
             <button class="button">Schedule a call</button>
@@ -68,14 +77,18 @@
     </div>
 
     <div class="container two">
-        <div class="left inner order2 text"><img class="image" src="/jpgs/2.jpg">Lorem ipsum, dolor sit amet consectetur
+        <div class="left inner order2 text"><img class="image" id="two" src="/jpgs/2.jpg">Lorem ipsum, dolor sit amet
+            consectetur
             adipisicing
             elit.
             Cumque,
             officia voluptatibus? Assumenda, nihil ad eos placeat obcaecati vel repellendus dolores! Lorem ipsum dolor
             sit amet consectetur adipisicing elit. Vel, eligendi.<br>
-
-            <div class="link"><br><a href="#">Read More</a>
+            <h2 id="start">How we started?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptates accusamus dolor possimus porro eligendi animi illum repellat, deserunt fuga
+                minima quos blandatem.</p>
+            <div class="link"><a href="#" id="readmore">Read More</a>
             </div>
 
         </div>
@@ -89,57 +102,76 @@
             <img class="image" id="three" src="/jpgs/3.jpg">
         </div>
     </div>
+    <div class="container three">
+        <h2 id="why">Why should you work with us?</h2>
 
-
-
-
-
-
-    <div class="container" id="services">
-        <h2 class="innerr">Services Offered</h2>
-
-        <div class="scroll-container ">
-            <div class="scroll-content">
-                <div class="card">
-                    <div class="cardtext"><img class="cardimage" src="/jpgs/3.jpg">
-                        <div class="cardt">Lorem ipsum dolor sit amet, consectetur ad
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardtext"><img class="cardimage" src="/jpgs/4.jpg">
-                        <div class="cardt"> consectetur adipisicing elit. Enim, autem.</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardtext"><img class="cardimage" src="/jpgs/5.jpg">
-                        <div class="cardt"> Fuga consequatur recusandae epturi laborum.</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardtext"><img class="cardimage" src="/jpgs/6.jpg">
-                        <div class="cardt">Lorem ipsum dolor sit amet. Lorem.</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardtext"><img class="cardimage" src="/jpgs/7.jpg">
-                        <div class="cardt"> maxime labore accusantium officiis, repellat</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardtext"><img class="cardimage" src="/jpgs/2.jpg">
-                        <div class="cardt"> Odit dolorem eum, itaque possimus, odio, pariatur </div>
-                    </div>
-                </div>
-
+        <div class=" area">
+            <div class="section"><img class="logoo" src="/jpgs/We-Love-What-We-Do.png"></i>
+                <h3> We love what we do</h3>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum error
+                    nulla modi
+                    voluptates ea. Obcaecati illo officiis laboriosam?</p>
+            </div>
+            <div class="section"><img class="logoo" src="/jpgs/two.png">
+                <h3> Leave it to us</h3>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum error
+                    nulla modi
+                    voluptates ea. Obcaecati illo officiis laboriosam?</p>
+            </div>
+            <div class="section"><img class="logoo" src="/jpgs/three.png" alt="" sizes="" srcset="">
+                <h3> Assured quality</h3>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum error
+                    nulla modi
+                    voluptates ea. Obcaecati illo officiis laboriosam?</p>
+            </div>
+            <div class="section"><img class="logoo" id="crown" src="/jpgs/a.png" alt="">
+                <h3 id="c"> Top of the industry materials</h3>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum error
+                    nulla modi
+                    voluptates ea. Obcaecati illo officiis laboriosam?</p>
             </div>
         </div>
     </div>
 
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="script.js"></script>
 
+    <div class="container four">
+        <h2 id="services">Services We Offer</h2><br><br>
+
+        <div>
+            <div class="cardarea">
+                <div class="card"><img class="mask1" src="/jpgs/2.jpg">
+                    <div class="cardhead">Demolition</div>
+                </div>
+                <div class="card"><img class="mask1" src="/jpgs/3.jpg">
+                    <div class="cardhead">Building</div>
+                </div>
+                <div class="card"><img class="mask1" src="/jpgs/4.jpg">
+                    <div class="cardhead">Interior planning</div>
+                </div>
+                <div class="card"><img class="mask1" src="/jpgs/5.jpg">
+                    <div class="cardhead">Restructuring</div>
+                </div>
+                <div class="card"><img class="mask1" src="/jpgs/6.jpg">
+                    <div class="cardhead">Reconstruction</div>
+                </div>
+                <div class="card"><img class="mask1" src="/jpgs/7.jpg">
+                    <div class="cardhead">Planning</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/c4f039e521.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
 
 </html>

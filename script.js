@@ -3,31 +3,44 @@ $(document).ready(function () {
         $(this).toggleClass('open');
         $("#menu").toggle(400);
     });
-
-    $(".scroll-content").slick({
-
-        centerMode: true,
-        centerPadding: '60px',
+    jQuery('.cardarea').slick({
         slidesToShow: 3,
+        arrows: true,
+        dots: true,
         responsive: [
+
             {
-                breakpoint: 768,
+                breakpoint: 1200,
                 settings: {
-                    arrows: false,
+
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 3
+                    slidesToShow: 2
                 }
             },
+
             {
-                breakpoint: 480,
+                breakpoint: 950,
                 settings: {
-                    arrows: false,
+
                     centerMode: true,
                     centerPadding: '40px',
                     slidesToShow: 1
                 }
             }
         ]
+
     });
+    setInterval(function () {
+        $(".slick-next").click();
+    }, 3000);
+
 });
+
+
+
+
+
+
+
+
