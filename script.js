@@ -35,6 +35,29 @@ $(document).ready(function () {
         $(".slick-next").click();
     }, 3000);
 
+    $('#menu').click(function () {
+
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click();
+
+    });
+
+    $(".but").click(function () {
+        var $question = $(this).closest(".question");
+        var $answer = $question.find(".answer");
+        var $plus = $question.find(".plus");
+
+        // Close previously opened buttons and hide their answers
+        $(".question").not($question).find(".answer").hide(100);
+        $(".but").not(this).removeClass("active");
+        $(".question .plus").show();
+
+        // Toggle the visibility of the clicked button's answer
+        $answer.toggle(100);
+
+        // Hide the plus element of the clicked question
+        $plus.hide();
+        $(this).toggleClass("active");
+    });
 });
 
 
