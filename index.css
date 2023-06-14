@@ -1184,7 +1184,7 @@ h3 {
     }
 
     .footercontainer .eleft img {
-        width: 100%;
+        width: 70%;
     }
 
     .left {
@@ -1197,5 +1197,22 @@ h3 {
 
     #honeleft {
         margin-right: 0;
+        margin-left: -20px;
+    }
+
+    #textleft {
+        margin-left: -20px;
+    }
+
+    .left button {
+        margin-left: -20px;
+    }
+
+    .left img {
+        margin-left: -20px;
+    }
+
+    #two {
+        padding-left: 20px;
     }
 }
