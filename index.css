@@ -42,8 +42,13 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: right;
     list-style: none;
+}
+
+
+nav ul li {
+    margin-left: 60px;
 }
 
 nav ul li a {
@@ -85,11 +90,12 @@ nav ul a:hover::before {
 
 
 .logo img {
-    height: 50px;
+    height: 90px;
 }
 
 
 #menu {
+
 
     display: none;
     list-style: none;
@@ -325,7 +331,6 @@ q {
     text-align: center;
     background-image: url("/jpgs/whitetexture.png");
     padding-bottom: 40px;
-
 }
 
 .area {
@@ -345,7 +350,7 @@ q {
 .section {
 
     padding: 30px;
-    border: 1px dotted black;
+    border: 1px solid black;
     border-radius: 50px;
     color: #000;
     text-align: left;
@@ -442,6 +447,10 @@ h3 {
     color: white;
 }
 
+.slick-dots li button:before {
+    color: white !important;
+
+}
 
 .slick-prev {
 
@@ -495,7 +504,7 @@ h3 {
 
 .footer .footercontainer .fleft ul li {
     opacity: 0.5;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     list-style: none;
 }
 
@@ -521,7 +530,7 @@ h3 {
 
 .footer .footercontainer .fright p {
     opacity: 0.5;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 15px;
 
 }
@@ -555,16 +564,17 @@ h3 {
 
 .container-question {
     margin: 30px;
-    justify-content: left;
+    justify-content: center;
+
 }
 
 
 .questions {
-
     margin: 0px;
     background-color: #ffffff;
     display: grid;
     grid-template-columns: auto;
+    justify-content: center;
 
 }
 
@@ -584,13 +594,13 @@ h3 {
 }
 
 .question {
+    width: 700px;
     font-family: 'Montserrat', sans-serif;
-    /* font-size: 2; */
     border: 1px solid rgb(183, 183, 183);
     padding: 10px;
     margin: 5px;
     background-color: rgb(255, 255, 255);
-    /*  justify-content: space-between; */
+
 }
 
 
@@ -794,6 +804,14 @@ h3 {
         padding-right: 10px;
     }
 
+    #menu {
+        width: 100%;
+        background-color: #ffffff;
+        height: 100vh;
+        position: fixed;
+        margin: 20px
+    }
+
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -831,8 +849,10 @@ h3 {
 
 
     #menu {
+        width: 100%;
+        background-color: #ffffff;
         height: 100vh;
-
+        position: fixed;
         margin: 20px
     }
 
@@ -924,25 +944,35 @@ h3 {
         padding-bottom: 15px;
     }
 
+    #nav-icon3 {
+        width: 40px;
+    }
 
+    #nav-icon3 span:nth-child(4) {
+        top: 30px;
+
+    }
+
+    #nav-icon3 span:nth-child(1) {
+        top: 8px;
+    }
+
+    #nav-icon3 span:nth-child(2),
+    #nav-icon3 span:nth-child(3) {
+        top: 19px;
+    }
+
+    #nav-icon3 span {
+        margin-top: 4px;
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 85%;
+    }
 }
 
-@media (max-width: 767px) {
-    .text {
-        font-size: 15px;
-    }
-
-    #honeleft {
-
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
+@media (max-width:767px) {
     .one {
-
         grid-template-columns: auto;
         grid-template-rows: auto auto;
         margin: 30px;
@@ -961,121 +991,6 @@ h3 {
         order: 2;
     }
 
-    #three {
-        display: none;
-    }
-
-    header {
-        grid-template-columns: 10% 90%;
-    }
-
-    .inner {
-        margin: 0px;
-    }
-
-    #menu {
-        height: 100vh;
-
-        margin: 20px
-    }
-
-    #nav-icon3 {
-        display: block;
-    }
-
-    nav {
-        display: none;
-    }
-
-
-    .area {
-        padding-left: 30px;
-        padding-right: 30px;
-        margin: 30px 32px;
-        grid-template-columns: auto auto;
-    }
-
-    .four {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-
-
-    .slick-prev {
-        left: 0 !important;
-    }
-
-    .slick-next {
-        right: 30px !important;
-    }
-
-    .footercontainer {
-        grid-template-columns: auto;
-    }
-
-    .footercontainer .eleft img {
-        height: 200px;
-    }
-
-    .fleft {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-
-    .fright {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .eright {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-
-    .footer .footercontainer .fleft h3 {
-        padding: 5px;
-        padding-bottom: 15px;
-    }
-
-    .footer .footercontainer .fright h3 {
-        padding: 5px;
-        padding-bottom: 15px;
-    }
-
-    .footer .footercontainer .eright h3 {
-        padding: 5px;
-        padding-bottom: 15px;
-    }
-
-}
-
-@media (max-width:718px) {
-    .one {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        margin: 30px;
-    }
-
-    .two {
-        grid-template-columns: auto;
-        margin: 12px;
-    }
-
-    .left {
-        padding: 20px;
-    }
 
     #three {
         display: none;
@@ -1089,11 +1004,6 @@ h3 {
         font-size: 30px;
     }
 
-    #menu {
-        height: 100vh;
-        margin: 20px
-    }
-
     #nav-icon3 {
         display: block;
     }
@@ -1115,6 +1025,14 @@ h3 {
     }
 
 
+    #menu {
+        width: 100%;
+        background-color: #ffffff;
+        height: 100vh;
+        position: fixed;
+        margin: 20px
+    }
+
 
     .card img {
 
@@ -1123,6 +1041,9 @@ h3 {
 
     }
 
+    .question {
+        width: 80%;
+    }
 
     .slick-prev {
         left: 0 !important;
@@ -1183,12 +1104,21 @@ h3 {
         justify-content: center;
     }
 
+    header {
+        grid-template-columns: 10% 90%;
+    }
+
     .footercontainer .eleft img {
         width: 70%;
     }
 
+
     .left {
         padding: 20px;
+    }
+
+    .left h1 {
+        padding-left: 0;
     }
 
     .right {
@@ -1196,23 +1126,42 @@ h3 {
     }
 
     #honeleft {
+        font-size: 40px;
         margin-right: 0;
-        margin-left: -20px;
+        margin-left: 0px;
     }
 
-    #textleft {
-        margin-left: -20px;
+    .area {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 30px 32px;
+        grid-template-columns: auto auto;
     }
 
-    .left button {
-        margin-left: -20px;
-    }
-
-    .left img {
-        margin-left: -20px;
+    .inner {
+        margin: 0px;
     }
 
     #two {
         padding-left: 20px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .ra {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:600px) {
+    .area {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 30px 32px;
+        grid-template-columns: auto;
     }
 }

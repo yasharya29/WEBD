@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
         $(this).toggleClass('open');
-        $("#menu").toggle(400);
+        $("#menu").toggle(200);
     });
     jQuery('.cardarea').slick({
         slidesToShow: 3,
@@ -47,12 +47,12 @@ $(document).ready(function () {
         var $plus = $question.find(".plus");
 
         // Close previously opened buttons and hide their answers
-        $(".question").not($question).find(".answer").hide(100);
+        $(".question").not($question).find(".answer").hide(00);
         $(".but").not(this).removeClass("active");
         $(".question .plus").show();
 
         // Toggle the visibility of the clicked button's answer
-        $answer.toggle(100);
+        $answer.toggle(00);
 
         // Hide the plus element of the clicked question
         $plus.hide();
