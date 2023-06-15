@@ -1,8 +1,29 @@
 $(document).ready(function () {
-    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+    /*****************************************************************************/
+    $('.menu').click(function () {
         $(this).toggleClass('open');
-        $("#menu").toggle(200);
+        $("#burger").toggle(200);
     });
+    $('#burgeritem').click(function () {
+        $('.menu').click();
+    });
+    /*********************************************************************************/
+    $('.questioncard').on('click', function () {
+        var answer = $(this).find('.answer');
+        var plus = $(this).find('.plus');
+
+        if (answer.is(':visible')) {
+            answer.slideUp(200);
+            plus.text('+');
+        } else {
+            $('.questioncard .answer').slideUp(200);
+            $('.questioncard .plus').text('+');
+            answer.slideDown(200);
+            plus.text('-');
+        }
+    });
+    /****************************************************************************/
+
     jQuery('.cardarea').slick({
         slidesToShow: 3,
         arrows: true,
@@ -31,39 +52,14 @@ $(document).ready(function () {
         ]
 
     });
+    /********************************************************************************* */
+
     setInterval(function () {
         $(".slick-next").click();
     }, 3000);
 
-    $('#menu').click(function () {
 
-        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click();
 
-    });
 
-    $(".but").click(function () {
-        var $question = $(this).closest(".question");
-        var $answer = $question.find(".answer");
-        var $plus = $question.find(".plus");
 
-        // Close previously opened buttons and hide their answers
-        $(".question").not($question).find(".answer").hide(00);
-        $(".but").not(this).removeClass("active");
-        $(".question .plus").show();
-
-        // Toggle the visibility of the clicked button's answer
-        $answer.toggle(00);
-
-        // Hide the plus element of the clicked question
-        $plus.hide();
-        $(this).toggleClass("active");
-    });
 });
-
-
-
-
-
-
-
-
