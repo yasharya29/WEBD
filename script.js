@@ -2,10 +2,12 @@ $(document).ready(function () {
     /*****************************************************************************/
     $('.menu').click(function () {
         $(this).toggleClass('open');
-        $("#burger").toggle(200);
+        $("#burger").toggle(00);
     });
-    $('#burgeritem').click(function () {
-        $('.menu').click();
+    $('#burgeritem a').click(function () {
+        $('.menu').removeClass('opened');
+        $("#burger").toggle(0);
+
     });
     /*********************************************************************************/
     $('.questioncard').on('click', function () {

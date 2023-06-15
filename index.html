@@ -49,9 +49,7 @@
 
             </div>
 
-            <button class="menu"
-                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-                aria-label="Main Menu">
+            <button class="menu" aria-expanded="false" aria-label="Main Menu">
                 <svg width="60" height="60" viewBox="0 0 100 100">
                     <path class="line line1"
                         d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -61,9 +59,22 @@
                 </svg>
             </button>
 
+
         </header>
 
         <ul id="burger">
+            <li><img id="burgerlogo" src="logo.png" width="100px"> <button class="menu opened" aria-expanded="true"
+                    aria-label="Main Menu">
+                    <svg width="60" height="60" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button></li>
+            <li></li>
+            <li></li>
             <li id="burgeritem"><a href="#head">Home</a></li>
             <li id="burgeritem"><a href="#aboutus">About</a></li>
             <li id="burgeritem"><a href="#services">Services</a></li>
@@ -130,71 +141,77 @@
             </div>
         </div>
     </div>
-    <!--  /*services*/ -->
-    <div class="container">
-        <div class="Services" id="services">
-            <h2>Services We Offer</h2>
-            <div>
-                <div class="cardarea">
-                    <div class="imagecard"><img class="mask1" src="/jpgs/2.jpg">
-                        <div class="cardhead">Demolition</div>
-                    </div>
-                    <div class="imagecard"><img class="mask1" src="/jpgs/3.jpg">
-                        <div class="cardhead">Building</div>
-                    </div>
-                    <div class="imagecard"><img class="mask1" src="/jpgs/4.jpg">
-                        <div class="cardhead">Interior planning</div>
-                    </div>
-                    <div class="imagecard"><img class="mask1" src="/jpgs/5.jpg">
-                        <div class="cardhead">Restructuring</div>
-                    </div>
-                    <div class="imagecard"><img class="mask1" src="/jpgs/6.jpg">
-                        <div class="cardhead">Reconstruction</div>
-                    </div>
-                    <div class="imagecard"><img class="mask1" src="/jpgs/7.jpg">
-                        <div class="cardhead">Planning</div>
-                    </div>
 
+    <!--  /*why*/ -->
+    <div class="whycontainer">
+        <div class="container">
+            <div class="whyshould">
+                <h2>Why Should You Work With Us?</h2>
+                <div class="deck">
+                    <div class="card">
+                        <img class="cardlogo" src="/jpgs/We-Love-What-We-Do.png">
+                        <h3> We love what we do</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
+                            error
+                            nulla modi
+                            voluptates ea. Obcaecati illo officiis laboriosam?</p>
+                    </div>
+                    <div class="card">
+                        <img class="cardlogo" src="/jpgs/two.png">
+                        <h3> Leave it to us</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
+                            error
+                            nulla modi
+                            voluptates ea. Obcaecati illo officiis laboriosam?</p>
+                    </div>
+                    <div class="card">
+                        <img class="cardlogo" src="/jpgs/three.png" alt="" sizes="" srcset="">
+                        <h3> Assured quality</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
+                            error
+                            nulla modi
+                            voluptates ea. Obcaecati illo officiis laboriosam?</p>
+                    </div>
+                    <div class="card">
+                        <img class="cardlogo" id="crown" src="/jpgs/a.png" alt="">
+                        <h3 id="c"> Top of the industry materials</h3>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
+                            error
+                            nulla modi
+                            voluptates ea. Obcaecati illo officiis laboriosam?</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--  /*why*/ -->
-    <div class="container">
-        <div class="whyshould">
-            <h2>Why Should You Work With Us?</h2>
-            <div class="deck">
-                <div class="card">
-                    <img class="cardlogo" src="/jpgs/We-Love-What-We-Do.png">
-                    <h3> We love what we do</h3>
-                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
-                        error
-                        nulla modi
-                        voluptates ea. Obcaecati illo officiis laboriosam?</p>
-                </div>
-                <div class="card">
-                    <img class="cardlogo" src="/jpgs/two.png">
-                    <h3> Leave it to us</h3>
-                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
-                        error
-                        nulla modi
-                        voluptates ea. Obcaecati illo officiis laboriosam?</p>
-                </div>
-                <div class="card">
-                    <img class="cardlogo" src="/jpgs/three.png" alt="" sizes="" srcset="">
-                    <h3> Assured quality</h3>
-                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
-                        error
-                        nulla modi
-                        voluptates ea. Obcaecati illo officiis laboriosam?</p>
-                </div>
-                <div class="card">
-                    <img class="cardlogo" id="crown" src="/jpgs/a.png" alt="">
-                    <h3 id="c"> Top of the industry materials</h3>
-                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
-                        error
-                        nulla modi
-                        voluptates ea. Obcaecati illo officiis laboriosam?</p>
+
+    <div class="servicecontainer">
+        <!--  /*services*/ -->
+        <div class="container">
+            <div class="Services" id="services">
+                <h2>Services We Offer</h2>
+                <div>
+                    <div class="cardarea">
+                        <div class="imagecard"><img class="mask1" src="/jpgs/2.jpg">
+                            <div class="cardhead">Demolition</div>
+                        </div>
+                        <div class="imagecard"><img class="mask1" src="/jpgs/3.jpg">
+                            <div class="cardhead">Building</div>
+                        </div>
+                        <div class="imagecard"><img class="mask1" src="/jpgs/4.jpg">
+                            <div class="cardhead">Interior planning</div>
+                        </div>
+                        <div class="imagecard"><img class="mask1" src="/jpgs/5.jpg">
+                            <div class="cardhead">Restructuring</div>
+                        </div>
+                        <div class="imagecard"><img class="mask1" src="/jpgs/6.jpg">
+                            <div class="cardhead">Reconstruction</div>
+                        </div>
+                        <div class="imagecard"><img class="mask1" src="/jpgs/7.jpg">
+                            <div class="cardhead">Planning</div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,7 +230,7 @@
                 </div>
             </div>
             <div class="questioncard">
-                <div class="question">What is Lorem Ipsum? <div class="plus">+</div>
+                <div class="question">How we started? <div class="plus">+</div>
                 </div>
                 <div class="answer">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -222,7 +239,7 @@
                 </div>
             </div>
             <div class="questioncard">
-                <div class="question">What is Lorem Ipsum? <div class="plus">+</div>
+                <div class="question">Why do we use it?<div class="plus">+</div>
                 </div>
                 <div class="answer">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -231,7 +248,7 @@
                 </div>
             </div>
             <div class="questioncard">
-                <div class="question">What is Lorem Ipsum? <div class="plus">+</div>
+                <div class="question">Where can I get some?<div class="plus">+</div>
                 </div>
                 <div class="answer">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -240,7 +257,52 @@
                 </div>
             </div>
             <div class="questioncard">
-                <div class="question">What is Lorem Ipsum? <div class="plus">+</div>
+                <div class="question">Where does it come from? <div class="plus">+</div>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        aliquid
+                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
+                </div>
+            </div>
+            <div class="questioncard">
+                <div class="question">How do you write lorem? <div class="plus">+</div>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        aliquid
+                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
+                </div>
+            </div>
+            <div class="questioncard">
+                <div class="question">What is the full form of lorem? <div class="plus">+</div>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        aliquid
+                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
+                </div>
+            </div>
+            <div class="questioncard">
+                <div class="question">What is the answer to the Lorem Ipsum question?<div class="plus">+</div>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        aliquid
+                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
+                </div>
+            </div>
+            <div class="questioncard">
+                <div class="question">What is lorem text in English?<div class="plus">+</div>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        aliquid
+                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
+                </div>
+            </div>
+            <div class="questioncard">
+                <div class="question">What is the introduction of lorem?<div class="plus">+</div>
                 </div>
                 <div class="answer">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -250,6 +312,8 @@
             </div>
         </div>
     </div>
+
+
     <!--  /*footer*/ -->
     <div class="container">
         <footer>
@@ -291,6 +355,7 @@
 
         </footer>
     </div>
+
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>

@@ -19,14 +19,16 @@ html {
 }
 
 .container {
-    padding: 15px;
-    background-color: rgb(255, 255, 255);
+    /* padding: 15px; */
+    /* background-color: rgb(255, 255, 255); */
     max-width: 2000px;
 
 }
 
 /******************************header*****************************************************/
 header {
+    padding: 20px;
+    padding-right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -109,6 +111,8 @@ nav ul a:hover {
 
 .menu {
     display: none;
+    position: relative;
+
 }
 
 #burger {
@@ -119,6 +123,12 @@ nav ul a:hover {
     background-color: rgb(255, 255, 255);
     display: none;
     list-style: none;
+    top: 0;
+}
+
+
+svg {
+    z-index: 99999;
 }
 
 #burger li a {
@@ -126,8 +136,11 @@ nav ul a:hover {
     text-decoration: none;
 }
 
+
 #burger li {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #burger a:hover {
@@ -143,7 +156,8 @@ nav ul a:hover {
     justify-content: center;
     align-items: center;
     margin: 0px 40px;
-    height: 80vh;
+    /* height: 80vh; */
+    padding: 15px;
 }
 
 #honeleft {
@@ -196,7 +210,8 @@ nav ul a:hover {
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     height: fit-content;
-
+    padding: 15px;
+    margin-bottom: 60px;
 }
 
 
@@ -233,9 +248,26 @@ q {
 }
 
 /*****************************Services we offer*********************************************/
+.servicecontainer {
+    background-color: rgb(11, 25, 44);
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.slick-dots {
+    position: absolute !important;
+
+
+}
+
+.slick-dots li button:before {
+    color: white !important;
+    /* opacity: 1 !important; */
+}
+
 .Services {
+    /* margin: 0 20px; */
     background-color: rgb(11 25 44);
-    margin: 0 20px;
 }
 
 .Services h2 {
@@ -302,12 +334,20 @@ q {
     font-size: 50px !important;
 }
 
+.slick-prev,
+.slick-next {
+    top: 37% !important;
+}
+
 /*************************Why*******************************************************/
+
+.whycontainer {
+    background-image: url("/jpgs/whitetexture.png");
+}
 
 .whyshould {
     text-align: center;
-    margin: 20px;
-    background-image: url("/jpgs/whitetexture.png");
+    padding-bottom: 60px;
 }
 
 .whyshould h2 {
@@ -340,21 +380,22 @@ q {
 /******************************************FAQ***********************************************/
 
 .questionarea {
-    margin: 0 40px;
+    margin: 50px 40px;
     background-color: #ffffff;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 15px;
 }
 
 .questioncard {
     max-width: 900px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid rgb(188, 188, 188);
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #00000014;
     margin: 5px 0;
     text-align: left;
 
@@ -365,8 +406,7 @@ q {
     align-items: center;
     text-align: left;
     justify-content: space-between;
-    margin: 10px 5px;
-    font-weight: bold;
+    margin: 15px 15px;
 }
 
 .answer {
@@ -381,7 +421,7 @@ q {
 
 /******************************footer**********************************************************/
 .footercontainer {
-    padding: 20px;
+    padding: 35px;
     font-family: 'Montserrat', sans-serif;
     background-color: #000;
     color: #ffffff;
@@ -402,9 +442,9 @@ q {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    text-align: left;
     justify-content: center;
-    text-align: center;
 }
 
 footer .eleft img {
@@ -453,6 +493,10 @@ footer .eleft img {
     margin: 10px 0;
     opacity: 0.7;
 
+}
+
+.fright a .fa {
+    padding: 10px;
 }
 
 .eright p {
@@ -561,6 +605,7 @@ footer .eleft img {
     .titlepage {
         grid-template-columns: auto;
         height: auto;
+        margin: 0;
     }
 
     .intro {
@@ -645,11 +690,12 @@ footer .eleft img {
     .titlepage {
         grid-template-columns: auto;
         height: auto;
+        margin: 0;
     }
 
     .intro {
-
-        margin: 0px 20px;
+        padding: 0;
+        margin: 0px 0px;
     }
 
     .introleft {
@@ -697,6 +743,7 @@ footer .eleft img {
 
     .introleft {
         order: 1;
+        margin: 0;
     }
 
     #thirdimage {
@@ -704,18 +751,27 @@ footer .eleft img {
     }
 
     .deck {
-        margin: 0 10px;
+        margin: 0 0px;
     }
 
+    .questionarea {
+        margin: 50px 0;
+    }
+
+    header {
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 600px) {
-    .deck {
 
-        grid-template-columns: auto;
+    header {
+        padding-right: 20px;
     }
 
     .deck {
+
+        grid-template-columns: auto;
         margin: 0 10px;
     }
 
@@ -734,9 +790,93 @@ footer .eleft img {
 
     .introleft {
         order: 1;
+        margin: 0;
     }
 
     #thirdimage {
         display: none;
     }
+
+    #navbar {
+        display: none;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    #honeleft {
+        font-size: 40px;
+    }
+
+    .titlepage {
+        grid-template-columns: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .intro {
+        padding: 0;
+        margin: 0px 0px;
+    }
+
+    .introleft {
+        margin: 0 10px;
+    }
+
+    .left {
+        margin-left: 0px;
+    }
+
+    .footercontainer {
+        grid-template-columns: auto;
+    }
+
+    .footercontainer .eleft img {
+        height: 200px;
+    }
+
+    .fright {
+        display: flex;
+        order: 4px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fleft {
+        display: none;
+
+    }
+
+    .eright {
+        display: none;
+    }
+
+    .intro {
+        grid-template-columns: auto;
+    }
+
+    .introleft {
+        order: 1;
+        margin: 0;
+    }
+
+    #thirdimage {
+        display: none;
+    }
+
+    .deck {
+        margin: 0 0px;
+    }
+
+    .questionarea {
+        margin: 50px 0;
+    }
+
 }
