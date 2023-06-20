@@ -4,22 +4,29 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     line-height: 150%;
+
 }
 
 .body {
     font-size: 100%;
+
 }
 
 h1 {
     font-size: 2.5em;
+
 }
 
 h2 {
     font-size: 1.875em;
+    /
 }
+
+h3 {}
 
 p {
     font-size: 0.875em;
+
 }
 
 .headingfont {
@@ -28,18 +35,24 @@ p {
 }
 
 .normalfont {
+
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-
     margin: 30px 10px;
+    background-color: #000;
 }
 
 /**************************navabr*******************************************************/
+.blackbg {
+    background-color: #000;
+}
 
 .navbar {
+    color: white;
+    background-color: #000;
     font-size: large;
     display: flex;
     justify-content: space-between;
@@ -65,12 +78,13 @@ p {
 }
 
 .navright ul li a:hover {
-    color: #8B0000;
+    color: #0076FF;
 }
 
 .navright ul a {
+
     text-decoration: none;
-    color: black;
+    color: white;
 
 }
 
@@ -78,17 +92,26 @@ p {
     margin-right: 50px;
     height: 30px;
     width: 80px;
-    border: 1px solid black;
+    border: 2px solid #0076FF;
     border-radius: 20px;
+    background-color: #FFD700;
+    color: #000;
+
 }
 
+.navright button a {
+    color: black;
+}
 
 /**********************************burger********************************************************************/
 .burger {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     z-index: 999;
     display: none;
     height: 100vh;
     width: 100%;
+    position: fixed;
 }
 
 .burger ul {
@@ -105,7 +128,7 @@ p {
 
 .burger ul a {
     text-decoration: none;
-    color: black;
+    color: white;
 
 }
 
@@ -119,7 +142,7 @@ p {
 
 .burger-line {
     fill: none;
-    stroke: #000;
+    stroke: #ffffff;
     stroke-width: 2;
     transition: stroke-dasharray 0.3s, stroke-dashoffset 0.3s;
 }
@@ -169,13 +192,14 @@ p {
 
 #bee {
     font-family: 'Sacramento', cursive;
-    color: #8B0000;
+    color: #FFD700;
     font-size: 8rem;
 }
 
 #bee2 {
     text-transform: capitalize;
     margin-top: -40px;
+    color: white;
 }
 
 /**************************************cards**********************************************************/
@@ -187,8 +211,8 @@ p {
 }
 
 .card {
-    border-top: 10px solid #8B0000;
-    background-color: #ffd90079;
+    border-top: 10px solid #FFD700;
+    background-color: #F5F5F5;
     border-radius: 30px;
     margin-bottom: 30px;
     margin: 0px 40px;
@@ -201,10 +225,10 @@ p {
 }
 
 .circle {
-    border: 1px solid red;
+    border: 2px solid #0076FF;
     border-radius: 100%;
     background-color: transparent;
-    background-color: rgba(0, 0, 0, -0.5);
+    background-color: #d5d5d5;
     backdrop-filter: blur(30px);
     width: 30%;
     padding: 35px;
@@ -243,7 +267,7 @@ p {
 }
 
 .infocard {
-    background-color: #cccccc;
+    background-color: #F5F5F5;
     padding: 20px;
     width: 60%;
     border: 1px solid black;
@@ -263,7 +287,7 @@ p {
 }
 
 .card2 {
-    background-color: rgb(187, 187, 187);
+    background-color: #F5F5F5;
     border-radius: 5px;
     width: 21rem;
     padding: 30px;
@@ -281,7 +305,7 @@ p {
 }
 
 .card3 {
-    background-color: rgb(187, 187, 187);
+    background-color: #F5F5F5;
     border-radius: 5px;
     width: 20.75rem;
     padding: 30px;
@@ -300,15 +324,69 @@ p {
     grid-column: 2 / span 2;
 }
 
+/***************************mission*****************************************************/
+.ourmission {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.missionimages img {
+    height: 200px;
+    margin: 10px;
+}
+
+.missioninfo {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.missionleft {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: auto 20px;
+}
+
+.missionimg1 {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    align-items: center;
+
+}
+
+.missionimg2 {
+    grid-column-start: 2;
+}
+
+#missionbold {
+    font-weight: bold;
+    color: white;
+}
+
+#missiontext {
+    color: white;
+
+}
+
+#omh {
+    color: #FFD700;
+    text-align: center;
+    margin: 20px;
+}
+
 /*********************************footer*************************************************/
 .footercontainer {
-    /* max-width: 100%; */
-    padding: 25px;
+    border-top: 2px dotted #FFD700;
+    padding: 10px 15px;
     font-family: 'Montserrat', sans-serif;
     background-color: #000;
     color: #ffffff;
     display: grid;
-    grid-template-columns: auto auto auto 30%;
+    grid-template-columns: 20% auto auto 30%;
 }
 
 .eleft {
@@ -368,7 +446,7 @@ footer .eleft img {
 }
 
 .fleft a:hover {
-    color: #FF1217;
+    color: #FFD700;
 }
 
 
@@ -648,6 +726,7 @@ footer .eleft img {
 
     .infocard {
         width: 100%;
+        margin: 30px;
     }
 
     .card {
