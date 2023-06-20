@@ -4,361 +4,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construciton</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="index.css">
+    <title>Bee Better </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4f039e521.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <!-- /*Header*/ -->
-    <div class="container">
-        <header>
-            <div class="logo">
-                <a href="#head">
-                    <img src="logo.png">
-                </a>
-            </div>
-
-
-            <div class="headerright" id="navbar">
-
-
-                <nav>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="navright">
                     <ul>
-                        <li><a href="#head">Home</a></li>
-                        <li><a href="#aboutus">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="\Xaventures\index.html">X10</a></li>
+                        <li><a href="#">Home</a></li>
+
+
+                        <li><a href="#">About Us</a></li>
+
+
+                        <li><a href="#">Our Mission</a></li>
+
+
+                        <li><a href="#">Blogs</a></li>
+                        <li>
+                            <button>
+                                <a href="#">Donate</a>
+                            </button>
+                        </li>
+
                     </ul>
-                </nav>
-
-            </div>
-
-            <button class="menu" aria-expanded="false" aria-label="Main Menu">
-                <svg width="60" height="60" viewBox="0 0 100 100">
-                    <path class="line line1"
-                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                    <path class="line line2" d="M 20,50 H 80" />
-                    <path class="line line3"
-                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                </svg>
-            </button>
-
-
-        </header>
-
-        <ul id="burger">
-            <li><img id="burgerlogo" src="logo.png" width="100px"> <button class="menu opened" aria-expanded="true"
-                    aria-label="Main Menu">
-                    <svg width="60" height="60" viewBox="0 0 100 100">
-                        <path class="line line1"
-                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                        <path class="line line2" d="M 20,50 H 80" />
-                        <path class="line line3"
-                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </div>
+                <div class="burger-icon">
+                    <svg viewBox="0 0 30 30">
+                        <path class="burger-line line1" d="M5,8h20" />
+                        <path class="burger-line line2" d="M5,15h20" />
+                        <path class="burger-line line3" d="M5,22h20" />
                     </svg>
-                </button></li>
-            <li></li>
-            <li></li>
-            <li id="burgeritem"><a href="#head">Home</a></li>
-            <li id="burgeritem"><a href="#aboutus">About</a></li>
-            <li id="burgeritem"><a href="#services">Services</a></li>
-            <li id="burgeritem"><a href="#contact">Contact Us</a></li>
-        </ul>
-
-    </div>
-    <!--   /*titlepage*/ -->
-    <div class="container">
-        <div class="titlepage">
-
-            <div class="left">
-                <h1 ID="honeleft">IS YOUR HOME IN NEED OF UPGRADES OR REPAIRS?</h1>
-                <p id="textleft" class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, molestias
-                    at
-                    quos
-                    voluptatum eligendi
-                    consequatur expedita ratione maxime fugiat minima!</p>
-                <div class="button-wrapper">
-                    <button id="orangebutton">Schedule a call</button>
                 </div>
-            </div>
 
-            <div class="right">
-                <img id="titleimage" src="/jpgs/1.jpeg">
+            </div>
+            <div class="burger">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Blogs</a></li>
             </div>
         </div>
-    </div>
-    <!-- /*intro*/ -->
-    <div class="container">
-        <div class="intro">
-            <div class="introleft text">
+    </header>
 
-
-                <div class="image-wrapper">
-                    <img class="introimage" src="/jpgs/2.jpg">
-                </div>
-                <p>Lorem ipsum, dolor sit
-                    amet consectetu adipisicingelit.Cumque,officia voluptatibus? Assumenda, nihil ad eos placeat
-                    obcaecati vel repellendus dolores! Lorem ipsumdolor sit amet consectetur adipisicing elit. Vel,
-                    eligendi.
-                </p>
-                <h2 id="start">How we started?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Voluptates accusamus dolor possimus porro eligendi animi illum repellat, deserunt
-                    fuga
-                    minima quos blandatem.
-                    <a href="#" id="readmore">Read More</a>
-                </p>
-
-            </div>
-            <div class="introright text">
-                <h2 id="aboutus">About US</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
-                    quis, ab
-                    qui vel
-                    pariatur
-                    quidem. Ipsam delectus maiores, labore unde officiis inventore harum animi culpa id hic nisi
-                    incidunt
-                    illo
-                    recusandae autem necessitatibus tempora soluta perspiciatis obcaecati, aspernatur iure. Nulla.</p>
-                <p><q style="padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit?</q></p>
-                <img class="introimage" id="thirdimage" src="/jpgs/3.jpg">
-            </div>
-        </div>
-    </div>
-
-    <!--  /*why*/ -->
-    <div class="whycontainer">
+    <div class="intro">
         <div class="container">
-            <div class="whyshould">
-                <h2>Why Should You Work With Us?</h2>
-                <div class="deck">
-                    <div class="card">
-                        <img class="cardlogo" src="/jpgs/We-Love-What-We-Do.png">
-                        <h3> We love what we do</h3>
-                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
-                            error
-                            nulla modi
-                            voluptates ea. Obcaecati illo officiis laboriosam?</p>
-                    </div>
-                    <div class="card">
-                        <img class="cardlogo" src="/jpgs/two.png">
-                        <h3> Leave it to us</h3>
-                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
-                            error
-                            nulla modi
-                            voluptates ea. Obcaecati illo officiis laboriosam?</p>
-                    </div>
-                    <div class="card">
-                        <img class="cardlogo" src="/jpgs/three.png" alt="" sizes="" srcset="">
-                        <h3> Assured quality</h3>
-                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
-                            error
-                            nulla modi
-                            voluptates ea. Obcaecati illo officiis laboriosam?</p>
-                    </div>
-                    <div class="card">
-                        <img class="cardlogo" id="crown" src="/jpgs/a.png" alt="">
-                        <h3 id="c"> Top of the industry materials</h3>
-                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, adipisci eum
-                            error
-                            nulla modi
-                            voluptates ea. Obcaecati illo officiis laboriosam?</p>
-                    </div>
+            <div class="titletext">
+                <div class="titletextleft">
+                    <h1 id="bee">Bee Better</h1>
+                    <p id="bee2">We invite you in our mission to bee better.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="servicecontainer">
-        <!--  /*services*/ -->
+    <div class="container">
+        <div class="cardcontainer">
+            <div class="card">
+                <div class="cardcontent">
+                    <div class="circle">
+                        <i class="fa fa-thumbs-o-up fa-2xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="introcarhead">Bee Well</h3>
+                    <p class="introcardp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ad ab eos
+                        nam ducimus
+                        voluptas, sint optio deleniti laboriosam maiores.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardcontent">
+                    <div class="circle">
+                        <i class="fa-regular fa-heart fa-2xl"></i>
+                    </div>
+                    <h3 class="introcarhead">Bee Better</h3>
+                    <p class="introcardp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ad ab eos
+                        nam ducimus
+                        voluptas, sint optio deleniti laboriosam maiores.</p>
+                </div>
+            </div>
+            <div class="card" id="cardthree"">
+                <div class=" cardcontent">
+                <div class="circle ">
+                    <i class="fa-regular fa-lightbulb fa-2xl"></i>
+                </div>
+                <h3 class="introcarhead">Bee Kind</h3>
+                <p class="introcardp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id nam voluptate
+                    maxime quisquam
+                    tenetur, expedita suscipit rerum sapiente omnis sed?</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="info">
         <div class="container">
-            <div class="Services" id="services">
-                <h2>Services We Offer</h2>
-                <div>
-                    <div class="cardarea">
-                        <div class="imagecard"><img class="mask1" src="/jpgs/2.jpg">
-                            <div class="cardhead">Demolition</div>
-                        </div>
-                        <div class="imagecard"><img class="mask1" src="/jpgs/3.jpg">
-                            <div class="cardhead">Building</div>
-                        </div>
-                        <div class="imagecard"><img class="mask1" src="/jpgs/4.jpg">
-                            <div class="cardhead">Interior planning</div>
-                        </div>
-                        <div class="imagecard"><img class="mask1" src="/jpgs/5.jpg">
-                            <div class="cardhead">Restructuring</div>
-                        </div>
-                        <div class="imagecard"><img class="mask1" src="/jpgs/6.jpg">
-                            <div class="cardhead">Reconstruction</div>
-                        </div>
-                        <div class="imagecard"><img class="mask1" src="/jpgs/7.jpg">
-                            <div class="cardhead">Planning</div>
-                        </div>
+            <div class="infowrapper">
+                <div class="infocard">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam nemo
+                        fuga
+                        veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
+                        earum
+                        exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium perspiciatis
+                        fugit
+                    </p>
 
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--   /*faq*/ -->
-    <div class="container">
-        <div class="questionarea text">
-            <h2 id="faqhead">Frequently Asked Questions</h2>
-            <div class="questioncard">
-                <div class="question text">What is Lorem Ipsum? <div class="plus">+</div>
-                </div>
-                <div class="answer text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-            <div class="questioncard">
-                <div class="question">How we started? <div class="plus">+</div>
-                </div>
-                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-            <div class="questioncard">
-                <div class="question">Why do we use it?<div class="plus">+</div>
-                </div>
-                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-            <div class="questioncard">
-                <div class="question">Where can I get some?<div class="plus">+</div>
-                </div>
-                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-            <div class="questioncard">
-                <div class="question">Where does it come from? <div class="plus">+</div>
-                </div>
-                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-            <div class="questioncard">
-                <div class="question">How do you write lorem? <div class="plus">+</div>
-                </div>
-                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-            <div class="questioncard">
-                <div class="question">What is the full form of lorem? <div class="plus">+</div>
-                </div>
-                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-            <div class="questioncard">
-                <div class="question">What is the answer to the Lorem Ipsum question?<div class="plus">+</div>
-                </div>
-                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-            <div class="questioncard">
-                <div class="question">What is lorem text in English?<div class="plus">+</div>
-                </div>
-                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-            <div class="questioncard">
-                <div class="question">What is the introduction of lorem?<div class="plus">+</div>
-                </div>
-                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        aliquid
-                        dignissimos, repudiandae neque quasi ab et voluptas velit illo quam.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- 
+    <div class="aboutus">
+        <div class="container">
+            <div class="row1">
+                <div class="card2">
+                    <div class="borderleft">
+                        <div class="card2heading">
+                            Purpose
+                        </div>
+                    </div>
+                    <div class="card2p">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam nemo
+                            fuga
+                            veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
+                            earum
+                            exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium perspiciatis
+                            fugit
+                        </p>
 
-
-    <!--  /*footer*/ -->
-    <div class="container">
-        <footer>
-
-            <div class="footercontainer">
-                <div class="eleft"><img src="logo.png"><br>
-                    <div class="eleftlogo">
-                        <a><i class="fa fa-map-marker"></i></a>
-                        <a><i class="fa fa-phone"></i></a>
-                        <a><i class="fa fa-envelope"></i></a>
-                        <a><i class="fa fa-youtube-play"></i></a>
                     </div>
                 </div>
-                <div class="fleft">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#head">Home</a></li>
-                        <li><a href="#aboutus">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="fright" id="contact">
-                    <h3>Contact Us</h3>
-                    <h4> <a><i class="fa fa-phone"></i></a>Phone </h4>
-                    <p>+91 99 99 99 99 99</p>
-                    <h4> <a><i class="fa fa-envelope"></i></a>Email</h4>
-                    <p>Email@email.com</p>
+                <img id="aui" src="/Tailwind/jps/girll.png" alt="">
+                <div class="card3">
+                    <div class="borderleft">
+                        <div class="card2heading">
+                            Purpose
+                        </div>
+                    </div>
+                    <div class="card2p">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam nemo
+                            fuga
+                            veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
+                            earum
+                            exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium perspiciatis
+                            fugit
+                        </p>
 
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="borderleft">
+                        <div class="card2heading">
+                            Purpose
+                        </div>
+                    </div>
+                    <div class="card2p">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam nemo
+                            fuga
+                            veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
+                            earum
+                            exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium perspiciatis
+                            fugit
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="borderleft">
+                        <div class="card2heading">
+                            Purpose
+                        </div>
+                    </div>
+                    <div class="card2p">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam nemo
+                            fuga
+                            veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
+                            earum
+                            exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium perspiciatis
+                            fugit
+                        </p>
+
+                    </div>
                 </div>
 
-                <div class="eright">
-                    <h3>Newsletter Signup</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, a!</p>
+
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+    <footer>
+
+        <div class="footercontainer">
+            <div class="eleft"><img src="/Tailwind/jps/logo.png"><br>
+                <div class="eleftlogo">
+                    <a><i class="fa fa-map-marker"></i></a>
+                    <a><i class="fa fa-phone"></i></a>
+                    <a><i class="fa fa-envelope"></i></a>
+                    <a><i class="fa fa-youtube-play"></i></a>
                 </div>
             </div>
+            <div class="fleft">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#aboutus">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="fright" id="contact">
+                <h3>Contact Us</h3>
+                <h4> <a><i class="fa fa-phone"></i></a>Phone </h4>
+                <p>+91 99 99 99 99 99</p>
+                <h4> <a><i class="fa fa-envelope"></i></a>Email</h4>
+                <p>Email@email.com</p>
+
+            </div>
+
+            <div class="eright">
+                <h3>Newsletter Signup</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, a!</p>
+            </div>
+        </div>
 
 
 
-        </footer>
-    </div>
+    </footer>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="aboutus"></div>
+    <div class="ourmission"></div>
+    <div class="footer"></div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://kit.fontawesome.com/c4f039e521.js" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="scriptt.js"></script>
+
+</html>
