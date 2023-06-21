@@ -19,25 +19,18 @@
 
     <div class="blackbg">
         <header>
-            <div class="container">
+            <div class="container" id="navbarcont">
                 <div class="navbar">
                     <div class="logo">
                         <img src="logo.png" alt="">
                     </div>
-                    <div class="navright">
+                    <div class="navright" id="home">
                         <ul>
-                            <!-- <li><a href="Construction\index.html">Construction</a></li> -->
-                            <!-- <li><a href="\Xaventures\index.html">X10</a></li> -->
-                            <li><a href="#">Home</a></li>
-
-
-                            <li><a href="#">About Us</a></li>
-
-
-                            <li><a href="#">Our Mission</a></li>
-
-
-                            <li><a href="#">Blogs</a></li>
+                            <li><a href="Construction\index.html">Construction</a></li>
+                            <li><a href="\Xaventures\index.html">X10</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#au">About Us</a></li>
+                            <li><a href="#om">Our Mission</a></li>
                             <li>
                                 <button id="donatebutton">
                                     <a href="#">Donate</a>
@@ -57,14 +50,23 @@
                 </div>
                 <div class="burger">
                     <ul>
+                        <li id="burgertitle">
+                            <img src="logo.png" alt="">
+                            <div class="burger-icon menu-open">
+                                <svg viewBox="0 0 30 30" style="margin-top: 13px;">
+                                    <path class="burger-line line1" d="M5,8h20" />
+                                    <path class="burger-line line2" d="M5,15h20" />
+                                    <path class="burger-line line3" d="M5,22h20" />
+                                </svg>
+                            </div>
+                        </li>
                         <li></li>
-                        <li></li>
-                        <!-- <li><a href="Construction\index.html">Construction</a></li> -->
-                        <!-- <li><a href=" \Xaventures\index.html">X10</a></li> -->
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Blogs</a></li>
+                        <li><a href="Construction\index.html">Construction</a></li>
+                        <li><a href=" \Xaventures\index.html">X10</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#au">About Us</a></li>
+                        <li><a href="#om">Our Mission</a></li>
+
                 </div>
             </div>
         </header>
@@ -120,103 +122,112 @@
         </div>
     </div>
 
+    <div class="info">
+        <div class="container">
+            <div class="infowrapper">
+                <div class="infocard">
+                    <p>
+                        100% ORGANIC-Zivatex uses the natural power of natural
+                        crystals.Made from
+                        food-grade all
+                        natural honey and is safe to use around your family and pets
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
-        <div class="aboutus">
-
-            <div class="info">
-                <div class="container">
-                    <div class="infowrapper">
-                        <div class="infocard">
+        <div class="auwrapper">
+            <div class="aboutus" id="au">
+                <h2 id="auh">About us
+                </h2>
+                <div class="row1">
+                    <div class="card2">
+                        <div class="borderleft">
+                            <div class="card2heading">
+                                Purpose
+                            </div>
+                        </div>
+                        <div class="card2p">
                             <p>
-                                100% ORGANIC-Zivatex uses the natural power of natural
-                                crystals.Made from
-                                food-grade all
-                                natural honey and is safe to use around your family and pets
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam
+                                nemo
+                                fuga
+                                veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
+                                earum
+                                exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium
+                                perspiciatis
+                                fugit
                             </p>
 
                         </div>
                     </div>
-                </div>
-            </div>
-            <h2 id="auh">About us
-            </h2>
-            <div class="row1">
-                <div class="card2">
-                    <div class="borderleft">
-                        <div class="card2heading">
-                            Purpose
+                    <img id="aui" src="/Tailwind/jps/girll.png" alt="">
+                    <div class="card3">
+                        <div class="borderleft">
+                            <div class="card2heading">
+                                Operating plan
+                            </div>
+                        </div>
+                        <div class="card2p">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam
+                                nemo
+                                fuga
+                                veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
+                                earum
+                                exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium
+                                perspiciatis
+                                fugit
+                            </p>
+
                         </div>
                     </div>
-                    <div class="card2p">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam nemo
-                            fuga
-                            veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
-                            earum
-                            exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium perspiciatis
-                            fugit
-                        </p>
+                    <div class="card3">
+                        <div class="borderleft">
+                            <div class="card2heading">
+                                Goal
+                            </div>
+                        </div>
+                        <div class="card2p">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam
+                                nemo
+                                fuga
+                                veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
+                                earum
+                                exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium
+                                perspiciatis
+                                fugit
+                            </p>
 
-                    </div>
-                </div>
-                <img id="aui" src="/Tailwind/jps/girll.png" alt="">
-                <div class="card3">
-                    <div class="borderleft">
-                        <div class="card2heading">
-                            Operating plan
                         </div>
                     </div>
-                    <div class="card2p">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam nemo
-                            fuga
-                            veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
-                            earum
-                            exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium perspiciatis
-                            fugit
-                        </p>
+                    <div class="card3">
+                        <div class="borderleft">
+                            <div class="card2heading">
+                                Mission Statement
+                            </div>
+                        </div>
+                        <div class="card2p">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam
+                                nemo
+                                fuga
+                                veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
+                                earum
+                                exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium
+                                perspiciatis
+                                fugit
+                            </p>
 
-                    </div>
-                </div>
-                <div class="card3">
-                    <div class="borderleft">
-                        <div class="card2heading">
-                            Goal
                         </div>
                     </div>
-                    <div class="card2p">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam nemo
-                            fuga
-                            veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
-                            earum
-                            exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium perspiciatis
-                            fugit
-                        </p>
 
-                    </div>
+
                 </div>
-                <div class="card3">
-                    <div class="borderleft">
-                        <div class="card2heading">
-                            Mission Statement
-                        </div>
-                    </div>
-                    <div class="card2p">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque, adipisci ipsam nemo
-                            fuga
-                            veniam accusantium perspiciatis modi ullam nihil, suscipit illo dolores numquam aliquid
-                            earum
-                            exercitationem aspernatur deleniti libero! Odit error, iste dicta laudantium perspiciatis
-                            fugit
-                        </p>
-
-                    </div>
-                </div>
-
-
             </div>
         </div>
     </div>
@@ -225,7 +236,8 @@
 
 
     <div class="container">
-        <div class="ourmission ">
+        <h2 id="omh1">Our Mission</h2>
+        <div class="ourmission " id="om">
             <div>
                 <div class="missionleft  missionimages">
                     <div class=" missionimg1"><img src=" /jpgs/2.jpg">
@@ -240,7 +252,7 @@
             </div>
 
             <div class="missioninfo">
-                <h2 id="omh">Our Mission</h2>
+                <h2 id="omh2">Our Mission</h2>
                 <p id="missionbold">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, voluptatibus dolor.
                     Repellendus quibusdam sint sequi quis error sapiente beatae reprehenderit.
@@ -261,7 +273,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" id="footercont">
         <footer>
 
             <div class="footercontainer">
@@ -276,10 +288,11 @@
                 <div class="fleft">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="#head">Home</a></li>
-                        <li><a href="#aboutus">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#au">About Us</a></li>
+                        <li><a href="#om">Our Mission</a></li>
+                        <li><a href="Construction\index.html">Construction</a></li>
+                        <li><a href=" \Xaventures\index.html">X10</a></li>
                     </ul>
                 </div>
                 <div class="fright" id="contact">

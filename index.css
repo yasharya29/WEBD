@@ -7,6 +7,11 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 .body {
     font-size: 100%;
 }
@@ -52,6 +57,10 @@ p {
     background-color: #000;
 }
 
+#navbarcont {
+    margin-top: 0;
+}
+
 .navbar {
     color: white;
     background-color: #000;
@@ -64,6 +73,7 @@ p {
 
 .logo img {
     height: 80px;
+    margin: 20px;
 }
 
 .navright ul {
@@ -108,6 +118,7 @@ p {
 
 /**********************************burger********************************************************************/
 .burger {
+    top: 0;
     background-color: #000000;
     color: rgb(255, 255, 255);
     z-index: 999;
@@ -140,7 +151,7 @@ p {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .burger-line {
@@ -178,6 +189,19 @@ p {
     /* stroke-dashoffset: -80; */
     transform: rotate(-45deg);
     transform-origin: 10px 20px;
+}
+
+#burgertitle img {
+
+    height: 80px;
+}
+
+#burgertitle {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 0;
 }
 
 /******************************************titletext********************************************************************************************************************/
@@ -275,14 +299,23 @@ p {
     width: 60%;
     border: 1px solid black;
     border-radius: 30px;
+    margin-top: 100px;
 }
 
 
 /******************************aboutus***********************************************/
 
 .aboutus {
-    padding: 100px 20px;
+    padding: 20px 20px;
     padding-bottom: 20px;
+    max-width: 1300px;
+}
+
+.auwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .row1 {
@@ -297,7 +330,7 @@ p {
 .card2 {
     background-color: #F5F5F5;
     border-radius: 30px;
-    width: 21rem;
+    /*   width: 21rem; */
     padding: 30px;
     margin: 10px;
 }
@@ -315,20 +348,19 @@ p {
 .card3 {
     background-color: #F5F5F5;
     border-radius: 30px;
-    width: 20.75rem;
+    /* width: 20.75rem; */
     padding: 30px;
     margin: 10px;
     grid-row: 2;
 }
 
 .borderleft {
-    border-left: 3px solid;
+    border-left: 3px solid #0076FF;
 }
 
 #aui {
-    width: 100%;
+    width: 97%;
     margin: 10px;
-    max-width: 41rem;
     grid-column: 2 / span 2;
     border-radius: 30px;
     border: 2px solid #0076FF;
@@ -387,14 +419,23 @@ p {
 #missionbold {
     font-weight: bold;
     color: white;
+    text-align: justify;
 }
 
 #missiontext {
     color: white;
+    text-align: justify;
 
 }
 
-#omh {
+#omh1 {
+    display: none;
+    color: #FFD700;
+    text-align: center;
+    margin: 20px;
+}
+
+#omh2 {
     color: #FFD700;
     text-align: center;
     margin: 20px;
@@ -409,6 +450,10 @@ p {
     color: #ffffff;
     display: grid;
     grid-template-columns: 20% auto auto 30%;
+}
+
+#footercont {
+    margin-bottom: 0;
 }
 
 .eleft {
@@ -531,6 +576,7 @@ footer .eleft img {
 
     .missionleft {
         grid-template-columns: 1fr;
+        padding-top: 70px;
     }
 
     .missionimg2 {
@@ -539,6 +585,7 @@ footer .eleft img {
 
     .missionimg1 {
         justify-content: center;
+        display: none;
     }
 }
 
@@ -546,6 +593,7 @@ footer .eleft img {
     .titletext {
         grid-template-columns: auto auto;
     }
+
 
     .normalfont {
         font-size: 16px;
@@ -587,6 +635,7 @@ footer .eleft img {
 
     .missionleft {
         grid-template-columns: 1fr;
+        padding-top: 70px;
     }
 
     .missionimg2 {
@@ -594,6 +643,7 @@ footer .eleft img {
     }
 
     .missionimg1 {
+        display: none;
         justify-content: center;
     }
 
@@ -684,15 +734,22 @@ footer .eleft img {
     }
 
 
-    .missionleft {
-        grid-template-columns: 1fr;
+    .missioninfo {
+        padding: 30px 0px;
     }
+
+    .missionleft {
+
+        padding-top: 70px;
+    }
+
 
     .missionimg2 {
         grid-column-start: auto;
     }
 
     .missionimg1 {
+        display: none;
         justify-content: center;
     }
 
@@ -736,6 +793,7 @@ footer .eleft img {
 
     .infocard {
         width: 100%;
+        margin: 10px;
     }
 
     #cardthree {
@@ -775,7 +833,8 @@ footer .eleft img {
     }
 
     .missioninfo {
-        padding: 30px 50px;
+        padding: 30px 0px;
+        padding-top: 0;
         grid-column-start: 1;
 
         grid-row-start: 2;
@@ -788,14 +847,19 @@ footer .eleft img {
 
     .missionleft {
         grid-row-start: 1;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .missionimg2 {
         grid-column-start: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
     }
 
     .missionimg1 {
+        display: none;
         justify-content: center;
     }
 
@@ -821,7 +885,7 @@ footer .eleft img {
     }
 
     .aboutus {
-        padding: 100px 00px;
+        padding: 20px 00px;
 
     }
 }
@@ -829,10 +893,27 @@ footer .eleft img {
 @media (max-width:600px) {
     .ourmission {
         grid-template-columns: 1fr;
+        padding: 20px 20px;
+    }
+
+    #omh1 {
+        display: block;
+        color: #FFD700;
+        text-align: center;
+        margin: 20px;
+        margin-top: 100px;
+    }
+
+    #omh2 {
+        display: none;
+        color: #FFD700;
+        text-align: center;
+        margin: 20px;
     }
 
     .missioninfo {
-        padding: 30px 50px;
+
+        padding-top: 0;
         grid-column-start: 1;
         grid-row-start: 2;
     }
@@ -864,6 +945,8 @@ footer .eleft img {
     .missionimg1 {
         justify-content: center;
     }
+
+
 }
 
 @media (max-width:479px) {
@@ -899,6 +982,7 @@ footer .eleft img {
 
     .infocard {
         width: 100%;
+        margin: auto 23px;
 
     }
 
