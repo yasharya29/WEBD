@@ -760,6 +760,11 @@ footer .eleft img {
 }
 
 @media (max-width: 767px) {
+
+    #bee2 {
+        margin-bottom: 40px;
+    }
+
     .titletext {
         grid-template-columns: auto;
     }
