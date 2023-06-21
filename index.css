@@ -9,20 +9,21 @@
 
 .body {
     font-size: 100%;
-
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 4em;
 
 }
 
 h2 {
-    font-size: 1.875em;
+    font-size: 3rem;
     /
 }
 
-h3 {}
+h3 {
+    font-size: 1.5rem;
+}
 
 p {
     font-size: 0.875em;
@@ -43,6 +44,7 @@ p {
 .container {
     margin: 30px 10px;
     background-color: #000;
+
 }
 
 /**************************navabr*******************************************************/
@@ -57,6 +59,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo img {
@@ -70,7 +73,7 @@ p {
 }
 
 .navright li {
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .navright ul li:hover {
@@ -267,15 +270,20 @@ p {
 }
 
 .infocard {
-    background-color: #F5F5F5;
-    padding: 20px;
+    background-color: #d0cece;
+    padding: 40px;
     width: 60%;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 30px;
 }
+
 
 /******************************aboutus***********************************************/
 
+.aboutus {
+    padding: 100px 20px;
+    padding-bottom: 20px;
+}
 
 .row1 {
     display: grid;
@@ -288,7 +296,7 @@ p {
 
 .card2 {
     background-color: #F5F5F5;
-    border-radius: 5px;
+    border-radius: 30px;
     width: 21rem;
     padding: 30px;
     margin: 10px;
@@ -306,7 +314,7 @@ p {
 
 .card3 {
     background-color: #F5F5F5;
-    border-radius: 5px;
+    border-radius: 30px;
     width: 20.75rem;
     padding: 30px;
     margin: 10px;
@@ -322,20 +330,33 @@ p {
     margin: 10px;
     max-width: 41rem;
     grid-column: 2 / span 2;
+    border-radius: 30px;
+    border: 2px solid #0076FF;
+}
+
+#auh {
+    color: #FFD700;
+    text-align: center;
+    margin: 20px;
+    padding-top: 50px;
 }
 
 /***************************mission*****************************************************/
 .ourmission {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 20px;
 }
 
 .missionimages img {
     height: 200px;
     margin: 10px;
+    border-radius: 30px;
+    border: 2px solid #0076FF;
 }
 
 .missioninfo {
+    padding: 30px 50px;
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 4;
@@ -348,6 +369,7 @@ p {
     vertical-align: middle;
     text-align: center;
     margin-right: auto 20px;
+
 }
 
 .missionimg1 {
@@ -506,6 +528,18 @@ footer .eleft img {
     .normalfont {
         font-size: 16px;
     }
+
+    .missionleft {
+        grid-template-columns: 1fr;
+    }
+
+    .missionimg2 {
+        grid-column-start: auto;
+    }
+
+    .missionimg1 {
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width:992px) and (max-width:1120px) {
@@ -551,6 +585,17 @@ footer .eleft img {
         display: none;
     }
 
+    .missionleft {
+        grid-template-columns: 1fr;
+    }
+
+    .missionimg2 {
+        grid-column-start: auto;
+    }
+
+    .missionimg1 {
+        justify-content: center;
+    }
 
 
 }
@@ -622,6 +667,39 @@ footer .eleft img {
         display: none;
     }
 
+    .row1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    #aui {
+        grid-row-start: 1;
+        grid-column: 1 / span 2;
+        margin: 40px;
+    }
+
+    .card3 {
+        grid-row: auto;
+    }
+
+
+    .missionleft {
+        grid-template-columns: 1fr;
+    }
+
+    .missionimg2 {
+        grid-column-start: auto;
+    }
+
+    .missionimg1 {
+        justify-content: center;
+    }
+
+    .aboutus {
+        padding: 100px 00px;
+
+    }
 }
 
 @media (max-width: 767px) {
@@ -691,6 +769,101 @@ footer .eleft img {
     .eright {
         display: none;
     }
+
+    .ourmission {
+        grid-template-columns: 1fr;
+    }
+
+    .missioninfo {
+        padding: 30px 50px;
+        grid-column-start: 1;
+
+        grid-row-start: 2;
+    }
+
+    .missionimages img {
+        height: 150px;
+
+    }
+
+    .missionleft {
+        grid-row-start: 1;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .missionimg2 {
+        grid-column-start: auto;
+    }
+
+    .missionimg1 {
+        justify-content: center;
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #aui {
+        grid-row-start: 1;
+        grid-column: 1 / span 1;
+        margin: 40px;
+    }
+
+    .card2 {
+        width: auto;
+    }
+
+    .card3 {
+        grid-row: auto;
+        width: auto;
+    }
+
+    .aboutus {
+        padding: 100px 00px;
+
+    }
+}
+
+@media (max-width:600px) {
+    .ourmission {
+        grid-template-columns: 1fr;
+    }
+
+    .missioninfo {
+        padding: 30px 50px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .missionimg1 {
+        display: none;
+    }
+
+    .missionimages img {
+        height: auto;
+        width: 90%;
+
+    }
+
+    .missionleft {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .missionimg2 {
+        grid-column-start: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .missionimg1 {
+        justify-content: center;
+    }
 }
 
 @media (max-width:479px) {
@@ -726,7 +899,7 @@ footer .eleft img {
 
     .infocard {
         width: 100%;
-        margin: 30px;
+
     }
 
     .card {
@@ -774,6 +947,27 @@ footer .eleft img {
 
     .eright {
         display: none;
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #aui {
+        grid-row-start: 1;
+        grid-column: 1 / span 1;
+        margin: 40px;
+    }
+
+    .card2 {
+        width: auto;
+    }
+
+    .card3 {
+        grid-row: auto;
+        width: auto;
     }
 
 }
