@@ -4,19 +4,43 @@
 }
 
 .container {
-    margin: auto 50px;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
 
+.innercontainer {
+    width: 980px;
 }
 
 .text {
     font-size: 16px;
 }
 
+h2 {
+    font-family: Italiana;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 75px;
+
+}
+
+@font-face {
+    font-family: giorgio;
+    src: url(/fonts/giorgio.otf);
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
 
 /******************************************************************navbar*******************************************************************************************************/
+
 
 .navbar {
     justify-content: center;
@@ -39,7 +63,7 @@
 }
 
 .navbar ul li a:hover {
-    color: black;
+    color: #D4C088;
 }
 
 .navbar ul li:hover {
@@ -58,16 +82,16 @@
 
 /*****************************introimage*********************************************************/
 
-.introimage {
+.intro {
     background-image: url("/Photos/Kitchen.png");
-    margin: 10px 0px;
+    margin: 10px 35px;
     margin-bottom: 0;
     height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.introimage h1 {
+.intro .container h1 {
     font-family: 'Italiana', serif;
     font-size: 80px;
     font-weight: 400;
@@ -79,8 +103,11 @@
 
 /****************************Welcome***********************************************************/
 .welcome {
-    background: #BCBEC033;
-    padding: 0px 16.67%;
+    margin: 0px 35px;
+    padding-bottom: 100px;
+}
+
+.welcomewrapper {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
@@ -90,20 +117,16 @@
     margin-top: 0;
 }
 
-.welcome img {
-    width: 100%;
+.welcome {
+    background: #BCBEC033;
 }
 
-.leftone {
-    font-family: Italiana;
-    font-size: 70px;
-    font-weight: 400;
-    line-height: 90px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-top: 100px;
-    margin-bottom: 75px;
+.lefttwo img {
+    width: 100%
+}
 
+.right2 img {
+    width: 100%;
 }
 
 .rightone {
@@ -128,12 +151,307 @@
     vertical-align: text-bottom;
 }
 
-.rightone a {
+
+/*****************************homeorganising**********************************************************/
+
+.homeorganising {
+    margin: 0 35px;
+}
+
+.homeorganisingwrapper {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    grid-gap: 30px;
+    align-items: end;
+    justify-content: center;
+    margin-top: 0;
+}
+
+#bottommarginzero {
+    margin-bottom: 0;
+}
+
+#hohead {
+
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 35px;
+}
+
+.door {
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 32px;
     letter-spacing: 0.15em;
     text-align: left;
+    margin-top: 30px;
     cursor: pointer;
+
+}
+
+.door:hover {
+    color: #D4C088;
+    transition: 150ms;
+}
+
+#leftimg {
+    width: 400px;
+}
+
+.horighttop {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 75px;
+
+}
+
+.homeorganisingimg {
+    /* width: 100%; */
+    margin: 10px;
+}
+
+#zeroone {
+    font-family: giorgio;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 200px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 5, 0.1);
+    position: relative;
+    bottom: 120px;
+    right: 25px;
+
+}
+
+.ba {
+    color: rgba(51, 51, 51, 0.1);
+    font-family: Giorgio;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+
+
+}
+
+.horighttop p {
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.horight {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.horightbottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    text-align: left;
+}
+
+/********************************party*************************************************************/
+.party {
+    margin: 0px 35px;
+    background: rgba(188, 190, 192, 0.2);
+}
+
+.partywrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.partywrapper p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(51, 51, 51, 0.7);
+
+}
+
+.partywrapper div img {
+    width: 100%;
+}
+
+#pp2img {
+    width: 80%;
+}
+
+.party h2 {
+    padding-top: 100px;
+
+}
+
+#pp2 {
+    display: grid;
+    align-items: end;
+    align-content: center;
+}
+
+
+/****************************************ouework****************************************************************/
+.workgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.workgrid div {
+    overflow: hidden;
+}
+
+.workgrid img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/****************************************slider**************************************************/
+
+.slider {
+    margin: 0px 35px;
+    background: rgba(188, 190, 192, 0.2);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+.innerslidercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cardhead {
+    font-family: Italiana;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.facelogo {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-family: slick;
+    font-size: 50px !important;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+
+}
+
+.slick-prev:before {
+
+    position: relative !important;
+    right: 30px !important;
+}
+
+/***************************************quote**********************************************************/
+.quote {
+    background-image: url("/Photos/whitetexture.png");
+    margin: 0px 35px;
+    margin-bottom: 0;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.quote .container p {
+    color: rgba(0, 0, 5, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 50px;
+    letter-spacing: 0em;
+
+}
+
+.quote .container .door {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**********************footer****************************************************************************/
+.footerwrapper {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footercontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #D4C088;
+    margin-bottom: 50px;
+}
+
+.footercontent .navbar {
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+
+}
+
+.copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: center;
 
 }
