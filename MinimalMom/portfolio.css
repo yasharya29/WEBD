@@ -1,0 +1,41 @@
+.intros {
+    background-image: url("/Photos/Portfolio/portbg.png");
+    margin: 10px 35px;
+    margin-bottom: 0;
+    height: 80vh;
+    background-repeat: no-repeat;
+}
+
+.intros .container h1 {
+    font-family: 'Italiana', serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 30vh 0px;
+
+}
+
+.portgrid .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portgrid img {
+    height: 100%;
+    width: 90%;
+}
+
+.portgrid .container div h3 {
+    font-family: 'Italiana', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 50px;
+    margin-left: 0;
+
+
+}

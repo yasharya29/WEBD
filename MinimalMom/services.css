@@ -1,0 +1,59 @@
+.intros {
+    background-image: url("/Photos/Services/servicebg.png");
+    margin: 10px 35px;
+    margin-bottom: 0;
+    height: 80vh;
+    background-repeat: no-repeat;
+}
+
+.intros .container h1 {
+    font-family: 'Italiana', serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 30vh 0px;
+
+
+}
+
+.services p {
+    color: rgba(51, 51, 51, 0.7);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 45px auto;
+    margin-top: 20px;
+}
+
+.services .container h2 {
+    margin: 0;
+}
+
+.servicegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-bottom: 120px;
+}
+
+.servicegrid div p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 30px;
+}
+
+.servicegrid h3 {
+    font-family: Italiana;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}

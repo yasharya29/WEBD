@@ -1,0 +1,79 @@
+.bloghp {
+    margin: 10px 35px;
+    margin-bottom: 0;
+    height: 30vh;
+    background-repeat: no-repeat;
+}
+
+.bloghp .container h1 {
+    font-family: 'Italiana', serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10vh;
+
+}
+
+
+.bloggrid .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+
+.blogcard {
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.blogcard img {
+    width: 100%;
+}
+
+.blogcard img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.imgwrap {
+    overflow: hidden;
+    height: 90%;
+}
+
+.bloggrid .container .blogcard div p {
+    color: #333333B2;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.blogtext h3 {
+    font-family: 'Italiana', serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+}
+
+.blogtext {
+    padding: 10px 20px 30px 20px;
+}
+
+.blogtext p {
+    margin-bottom: 10px;
+}
+
+.blogcard a {
+    text-decoration: none;
+    cursor: pointer;
+}

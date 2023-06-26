@@ -1,0 +1,102 @@
+.introau {
+    background-image: url("/Photos/Aboutus/introimage.png");
+    margin: 10px 35px;
+    margin-bottom: 0;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.introau .container h1 {
+    font-family: 'Italiana', serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 30vh 0px;
+}
+
+.welcomewrapperau div img {
+    width: 90%;
+}
+
+.welcomewrapperau {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    padding-top: 20px;
+    align-items: center;
+
+}
+
+.welcomewrapperau p {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(51, 51, 51, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 70px;
+    margin-right: 60px;
+
+}
+
+/***************************author*************************************************/
+
+
+.authorwrapper {
+
+    background: #BCBEC033;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+.authorwrapper img {
+    margin: 120px;
+    margin-top: 0px;
+    margin-left: 80px;
+}
+
+.authorwrapper h2 {
+    font-family: Italiana;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+
+}
+
+.authorwrapper h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+
+}
+
+.authorwrapper p {
+    color: rgba(51, 51, 51, 0.7);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
