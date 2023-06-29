@@ -48,7 +48,8 @@
 }
 
 .burger div img {
-    height: 50px;
+    height: 60px;
+    margin: 5px;
 }
 
 .hamburger-menu {
@@ -149,6 +150,11 @@
         line-height: 80px;
     }
 
+    body {
+        padding-top: 60px
+    }
+
+
     .welcome {
         padding-left: 30px;
         padding-right: 30px;
@@ -198,6 +204,10 @@
     .intro .container h1 {
         font-size: 50px;
         line-height: 80px;
+    }
+
+    body {
+        padding-top: 60px
     }
 
     .welcome {
@@ -288,6 +298,10 @@
     .intro .container h1 {
         font-size: 40px;
         line-height: 50px;
+    }
+
+    body {
+        padding-top: 60px
     }
 
     .welcome {
