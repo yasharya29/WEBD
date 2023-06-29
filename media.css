@@ -598,6 +598,10 @@
         width: 80%;
     }
 
+    .horightbottom {
+        margin-right: 10px;
+    }
+
     #az {
         width: 100%;
         margin: 0 auto;
