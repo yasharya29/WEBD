@@ -46,6 +46,10 @@
 
 }
 
+#p {
+    display: none;
+}
+
 .contactgrid .container form {
     display: flex;
     flex-direction: column;

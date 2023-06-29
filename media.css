@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin-top: 30px;
+
 
 }
 
@@ -42,10 +42,6 @@
     margin: auto 30px;
 }
 
-.burgermenu ul li a:hover {
-    color: #D4C088;
-    transition: all 0.3s;
-}
 
 .burger div img {
     height: 60px;
@@ -374,6 +370,14 @@
     .contactgridcontainer {
         grid-template-columns: auto;
     }
+
+    #o {
+        display: none;
+    }
+
+    #p {
+        display: contents;
+    }
 }
 
 @media (max-width: 767px) {
@@ -397,6 +401,12 @@
         line-height: 40px;
         margin-top: 60px;
         margin-bottom: auto;
+    }
+
+    .party {
+        margin: 0px 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .navbar ul {
@@ -548,12 +558,12 @@
         margin: 0px 15px;
         padding-left: 10px;
         padding-right: 10px;
+        padding-bottom: 30px;
     }
 
     .ourwork {
         margin: 0px 15px;
-        padding-left: 10px;
-        padding-right: 10px;
+
     }
 
     .slider {
@@ -654,6 +664,14 @@
 
     .contactgrid .container form {
         margin: 0;
+    }
+
+    #o {
+        display: none;
+    }
+
+    #p {
+        display: contents;
     }
 }
 
