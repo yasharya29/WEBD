@@ -16,6 +16,9 @@
 
 }
 
+.bloggrid {
+    margin: 60px 15px;
+}
 
 .bloggrid .container {
     display: grid;
@@ -35,8 +38,12 @@
     border-radius: 15px;
 }
 
+
+
 .blogcard img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .blogcard img:hover {
