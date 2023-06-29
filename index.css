@@ -144,19 +144,37 @@ body {
     transition: all 0.3s;
 }
 
+
 #lilogo:hover {
     transform: none;
 }
 
+/******************************burger*********************************************/
+
 /*****************************introimage*********************************************************/
+.bgimage img {
+    display: block;
+    width: 100%;
+    max-height: 900px;
+    object-fit: cover;
+}
+
+.intro-image-wrapper {
+    width: 100%;
+    text-align: center;
+}
 
 .intro {
-    background-image: url("/Photos/Kitchen.png");
-    margin: 10px 35px;
-    margin-bottom: 0;
-    height: 80vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: absolute;
+    top: 43%;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    transform: translateY(-50%);
+    max-width: 914px;
+    margin: 0px auto;
+    padding: 25px 15px;
+    z-index: 9;
 }
 
 .intro .container h1 {
@@ -166,7 +184,10 @@ body {
     line-height: 80px;
     letter-spacing: 0em;
     text-align: center;
-    padding: 30vh 0px;
+    display: inline-block;
+    position: relative;
+
+
 }
 
 /****************************Welcome***********************************************************/
@@ -542,3 +563,5 @@ body {
     text-align: center;
 
 }
+
+/****************************************************************************************************************************************************************************************************************/

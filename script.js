@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-
+    $(".burgermenu").toggle(00);
     $('.slider-wrapper').slick({
         /* dots: true, */
         infinite: true,
@@ -52,5 +52,10 @@ $(document).ready(function () {
     });
 
 
+    $('.hamburger-menu').click(function () {
+        $(this).toggleClass('open');
+        /*   $('.menu-items').toggleClass('open'); */
+        $(".burgermenu").toggle(100);
 
+    });
 });
