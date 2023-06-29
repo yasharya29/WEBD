@@ -317,8 +317,7 @@ body {
 }
 
 .homeorganisingimg {
-    width: 96%;
-    margin: 10px;
+    width: 100%;
 }
 
 #zeroone {
@@ -360,6 +359,7 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     text-align: left;
+    grid-gap: 10px;
 }
 
 /********************************party*************************************************************/
