@@ -511,6 +511,7 @@ body {
 /***************************************quote**********************************************************/
 .quote {
     background-image: url("/Photos/whitetexture.png");
+    background-position: center center;
     margin: 0px 35px;
     margin-bottom: 0;
     height: 520px;

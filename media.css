@@ -687,6 +687,7 @@
 
 .welcome {
     margin: 15px 15px;
+    margin-top: 0;
 }
 
 .homeorganizing {
@@ -699,6 +700,7 @@
 
 .ourwork {
     margin: 0px 15px;
+    margin-bottom: 85px;
 }
 
 .slider {
